@@ -1,4 +1,4 @@
-# Use Case 1 – Outfit nach Farbe auswählen
+# Use Case – Outfit nach Farbe auswählen
 
 Akteure:  
 TikToker (Hauptakteur)
