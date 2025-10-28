@@ -1,0 +1,17 @@
+3)
+
+Anwendungsfall: Such- und Filterfunktion
+
+Kurzbeschreibung: User sucht nach Kleidungsstücken, die den Suchkriterien entsprechen. (z.B. Kleidungsstück entspricht dem vom User vergebenen Namen, oder der vom User ausgewählten Farbe)
+
+Akteur: Benutzer der Rolle Benutzer (Admin seines Kleiderschranks)
+
+Vorbedingung: User befindet sich im Tab "Garderobe" und sieht ALLE seine Kleidungsstücke
+
+Nachbedingung: Es werden nur Kleider angezeigt, die die Suchbedingungen erfüllen
+
+Normalverlauf: User gibt ein Schlüsselwort ein oder wählt eine Kategorie ---> System zeigt eine Menge von Kleidern an, die die Kriterien erfüllen.
+
+Alternativablauf: User wählt eine Kategorie aus, die von keinem Kleidungsstück repräsentiert wird ---> System zeigt eine leere Menge von Kleidern ---> Tipp 1 wird angezeigt (Füge ein neues Kleidungsstück hinzu!)
+
+Qualitätsanforderungen: Responsetime < 5s, Suchleiste und/oder anklickbare Buttons
