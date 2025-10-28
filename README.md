@@ -1,8 +1,8 @@
 # Outfit-Designer
-Web-App zur Outfit Auswahl für TikToker
+Web-App für kreative Outfit-Auswahl
 
-Projekt von: Hamza Allaham  
-Kurs: Software- und Web-Engineering I  
+Projekt von: Gruppe 6b
+Kurs: Software und Web Engineering I  
 Hochschule: TH Lübeck
 
 Dieses Repository enthält:
