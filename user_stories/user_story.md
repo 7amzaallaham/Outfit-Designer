@@ -9,4 +9,3 @@ Akzeptanzkriterien:
 - Der Benutzer kann nach Farben (Rot, Blau, Schwarz usw.) filtern.  
 - Die gefilterten Outfits werden sofort angezeigt.
 
-Priorität: Hoch
