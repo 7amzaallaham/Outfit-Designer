@@ -1,0 +1,2 @@
+User Story – Outfit speichern 
+Als beschäftigte Nutzerin möchte ich mein aktuelles Outfit mit einem Klick speichern können, um es später schnell wieder anzeigen zu lassen, ohne es neu zusammenzustellen. 
