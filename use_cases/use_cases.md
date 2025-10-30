@@ -1,7 +1,7 @@
 # Use Case – Outfit nach Farbe auswählen
 
 Akteure:  
-TikToker (Hauptakteur)
+TikToker
 
 Kurzbeschreibung:
 Der Benutzer möchte ein Outfit in einer bestimmten Farbe auswählen und sofort die Änderung im Vorschaufenster sehen.
