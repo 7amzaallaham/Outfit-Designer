@@ -8,8 +8,11 @@ Normalablauf:
 2.	Sie klickt auf den Button „Save“. 
 3.	Das System speichert das Outfit und zeigt eine Bestätigungsmeldung an. („Outfit Saved“)
 
-Alternativablauf: Wenn der Speicher voll ist, erscheint eine Meldung: „Insufficient memory, please delete an old outfit.“ 
+Alternativablauf: 
+Wenn während des Speichervorgangs keine Internetverbindung besteht, erscheint eine Meldung: "Connection interrupted, please try again later."
 
 Qualitätsanforderungen: 
 •	Speicherung erfolgt in weniger als 2 Sekunden. 
 •	Die App reagiert flüssig und ohne Verzögerung. 
+
+
