@@ -11,7 +11,7 @@ Vorbedingungen:
 -Der Benutzer befindet sich auf der Outfit-Auswahlseite.
 
 Nachbedingungen:
--Das ausgewählte Outfit wird in der gewählten Farbe angezeigt.
+Das ausgewählte Outfit wird in der gewählten Farbe angezeigt.
 
 Standardablauf:  
 1.Der Benutzer öffnet die Outfit-Auswahlseite.  
