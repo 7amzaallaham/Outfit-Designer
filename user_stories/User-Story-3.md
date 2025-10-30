@@ -1,4 +1,4 @@
-Als beschäftigte Nutzerin möchte ich mein aktuelles Outfit mit einem Klick speichern können, um es später schnell wieder anzeigen zu lassen, ohne es neu zusammenzustellen. 
+Als beschäftigte Nutzerin möchte ich mehrere Outfits speichern, um es später schnell wieder anzeigen zu lassen, ohne es neu zusammenzustellen. 
 
 
 Akzeptenz kriterien ........
