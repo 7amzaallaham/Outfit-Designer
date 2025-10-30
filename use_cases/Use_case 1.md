@@ -25,5 +25,3 @@ Wenn die ausgewählte Farbe momentan nicht verfügbar ist, zeigt das System eine
 Erweiterungen:
 -Benutzer kann das Outfit speichern oder zurücksetzen.
 
-
-- wie wird die outfit erstellt 
