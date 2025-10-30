@@ -3,6 +3,7 @@ Kurzbeschreibung: User speichert ein zusammengestelltes Outfit, um es später er
 Akteur: Sarah Wagner (in der Rolle der Benutzerin)
 Vorbedingung: Website ist geöffnet, ein Outfit wurde erstellt. 
 Nachbedingung: Das Outfit ist gespeichert und sichtbar in der Outfit Liste. 
+
 Normalablauf: 
 1.	Sarah öffnet die Website und wählt „Kleidungsstück hinzufügen“.
 2.  Sie wählt ein Kleidungsstück von ihrem Gerät aus und lädt es hoch.
