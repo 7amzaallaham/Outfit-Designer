@@ -15,3 +15,9 @@ Normalverlauf: User gibt ein Schlüsselwort ein oder wählt eine Kategorie ---> 
 Alternativablauf: User wählt eine Kategorie aus, die von keinem Kleidungsstück repräsentiert wird ---> System zeigt eine leere Menge von Kleidern ---> Tipp 1 wird angezeigt (Füge ein neues Kleidungsstück hinzu!)
 
 Qualitätsanforderungen: Responsetime < 5s, Suchleiste und/oder anklickbare Buttons
+
+
+- Farbe filter 
+- Meine Garderobe
+- Für hochladen (Private oder Public)
+- 
