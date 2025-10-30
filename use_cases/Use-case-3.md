@@ -17,6 +17,6 @@ Wenn während des Speichervorgangs keine Internetverbindung besteht, erscheint e
 
 Qualitätsanforderungen: 
 •	Speicherung erfolgt in weniger als 2 Sekunden.
-•	Falls die Speicherung aufgrund einer schlechten Internetverbindung oder eines geschlossenen Browsers nicht erfolgreich war, wird das Outfit lokal gespeichert und beim erneuten Öffnen der Website automatisch an den Server übertragen. Sollte die Übertragung fehlschlagen, wird der lokale Entwurf verworfen.
+
 
 
