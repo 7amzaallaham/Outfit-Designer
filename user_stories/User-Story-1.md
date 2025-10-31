@@ -1,6 +1,6 @@
 # User Story 
 
-Als: TikToker ich möchte:** Outfits nach Stil und Farbe filtern, speichern und mit anderen teilen können, damit ich passende Outfits schneller finde und die beliebtesten Styles für meine Videos erkenne.  
+Als: TikToker ich möchte Outfits nach Stil und Farbe filtern, speichern und mit anderen teilen können, damit ich passende Outfits schneller finde und die beliebtesten Styles für meine Videos erkenne.  
 
 **Akzeptanzkriterien:**  
 1. Der Benutzer kann nach Stil (Casual, Streetwear, Elegant) und nach Farben (Rot, Blau, Schwarz usw.) filtern.  
