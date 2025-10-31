@@ -1,14 +1,15 @@
 # Persona: TikToker Leo 15 Jahre alt
 
-Name: Leo 
-Alter: 15 Jahre  
-Beruf: Schüler und TikToker  
+- Leo ist ein 15-jähriger Schüler, der leidenschaftlich gerne TikTok-Videos dreht.
+In seinen Clips zeigt er verschiedene Outfits und experimentiert mit Farben und Stilen.
+Sein Ziel ist es, passende Outfits zu finden, sie zu speichern und mit seiner Community zu teilen,
+um mehr Likes und Feedback zu bekommen.
 
-Ziel: Seine Videos kreativer gestalten, indem er passende Outfits mit verschiedenen Farben ausprobiert.  
-Leo möchte mehr Likes und Follower auf TikTok gewinnen, indem er mit Stil und Farbe spielt. Und gute Kenntnisse in Social Media, Basiswissen über einfache Web-Apps.  
+- Leo liebt es, kreative Styles zu kombinieren und herauszufinden, welche Outfits bei seinen Followern am besten ankommen.
+Doch oft verliert er den Überblick über seine beliebtesten Outfits und weiß nicht genau,
+welche Farben in seinen Videos am besten wirken.
 
-Frustrationen:  
-* Schwierigkeit, das richtige Outfit für den Videostil zu finden.  
-* Keine einfache Möglichkeit, Outfits visuell zu testen.  
+-Da er viel Zeit auf Social Media verbringt und sich gut mit Smartphone-Apps auskennt,
+wünscht er sich eine einfache Web-App, mit der er Outfits filtern, speichern und teilen kann.
 
-Leo sagte: "Ich will wissen, welches Outfit in meinen TikTok Videos am besten aussieht"
+**Leo sagte:** „Ich will sehen, welche meiner Outfits am meisten Likes bekommen!“
