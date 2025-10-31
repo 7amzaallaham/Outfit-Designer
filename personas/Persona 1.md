@@ -9,7 +9,7 @@ um mehr Likes und Feedback zu bekommen.
 Doch oft verliert er den Überblick über seine beliebtesten Outfits und weiß nicht genau,
 welche Farben in seinen Videos am besten wirken.
 
--Da er viel Zeit auf Social Media verbringt und sich gut mit Smartphone-Apps auskennt,
+- Da er viel Zeit auf Social Media verbringt und sich gut mit Smartphone-Apps auskennt,
 wünscht er sich eine einfache Web-App, mit der er Outfits filtern, speichern und teilen kann.
 
 **Leo sagte:** „Ich will sehen, welche meiner Outfits am meisten Likes bekommen!“
