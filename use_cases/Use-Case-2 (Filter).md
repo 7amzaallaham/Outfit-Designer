@@ -13,8 +13,8 @@
   3. Tipp 1 wird angezeigt (Füge ein neues Kleidungsstück hinzu!)
   4. Der Filter wird zurückgesetzt und der User kann erneut suchen
 * Qualitätsanforderungen:
-  1. Suchleiste und/oder Checkbox
-  2. User in der Lage in weniger als 15s alle gewünschten Attribute auszuwählen, einzugeben
+  1. Suchleiste und/oder Checkboxes
+  2. User in der Lage in weniger als 15s alle gewünschten Attribute auszuwählen/einzugeben
   3. Oft genutzte Kategorien/Filter sind schneller zu finden (Höhere Position in Kategorieauswahl)
   4. Oft hinzugefügte Kleidungsstücke erscheinen als erstes nach und vor der Suche (bevor und nach dem Filtern)
 
