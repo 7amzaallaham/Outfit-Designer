@@ -1,27 +1,36 @@
-# Use Case – Outfit nach Farbe auswählen
+# Use Case – Outfit auswählen, speichern und teilen
 
-Akteure:  
-TikToker
+**Kurzbeschreibung:**  
+Der Benutzer möchte ein Outfit nach Farbe oder Stil auswählen, es speichern und optional öffentlich teilen.  
+Das System zählt Klicks und Likes, um die Beliebtheit einzelner Outfits zu zeigen.
 
-Kurzbeschreibung:
-Der User möchte ein Outfit in einer bestimmten Farbe (finden/filtern/ein teil einer bestimmter farbe) und sofort die Änderung im Vorschaufenster sehen.
+**Vorbedingungen:**  
+- Die App ist gestartet und der Benutzer ist eingeloggt.  
+- Outfits stehen in verschiedenen Farben und Stilen zur Verfügung.
 
-Vorbedingungen:  
-* Die Anwendung ist gestartet.  
-* Der Benutzer befindet sich auf der Outfit-Auswahlseite.
+**Nachbedingungen:**  
+- Das ausgewählte oder gespeicherte Outfit wird korrekt angezeigt.  
+- Beliebtheitsdaten (Klicks, Likes, Dislikes) werden im Hintergrund gespeichert.
 
-Nachbedingungen:nur outfit anzeigt , die minds. nur ein Teil der farbe orange hat.
-Das ausgewählte Outfit wird in der gewählten Farbe angezeigt.
+**Standardablauf:**  
+1. Der Benutzer öffnet die Outfit-Auswahlseite.  
+2. Er wählt Stil und Farbe (z. B. Streetwear, Blau).  
+3. Das System zeigt automatisch alle passenden Outfits.  
+4. Der Benutzer klickt auf ein Outfit – das System zählt den Klick.  
+5. Er kann das Outfit speichern und entscheiden, ob es **privat** bleibt oder **öffentlich** geteilt wird.  
+6. Wenn öffentlich, kann das Outfit von anderen bewertet werden (Like/Dislike).  
 
-Standardablauf:  
-  1. Der Benutzer öffnet die Outfit-Auswahlseite.  
-  2. Der Benutzer ...(gibt filter kriterien ein)... klickt auf eine Farboption (z. B. Rot, Blau, Schwarz).  / user gibt in such ein orange 
-  3. Das System aktualisiert die Outfit-Vorschau entsprechend der ausgewählten Farbe.  
+**Alternativablauf:**  
+- Wenn keine Internetverbindung besteht, zeigt das System:  
+  „Outfits können derzeit nicht geladen werden.“  
+- Wenn die gewählte Farbe oder der Stil nicht verfügbar ist, erscheint:  
+  „Diese Auswahl ist momentan nicht verfügbar.“
 
-Alternativablauf: 
-Wenn die ausgewählte Farbe momentan nicht verfügbar ist, zeigt das System eine kurze Meldung:
-(Diese Farbe ist zurzeit nicht verfügbar.)
+**Erweiterungen:**
+- Das System zeigt eine Rangliste der beliebtesten Outfits.  
+- Der Benutzer kann später seine gespeicherten Outfits bearbeiten oder löschen.  
 
-Erweiterungen:
-* Benutzer kann das Outfit speichern oder zurücksetzen.
-
+**Qualitätsanforderungen:**  
+- Die App reagiert ohne spürbare Verzögerung.  
+- Die Bewertung und Speicherung erfolgt zuverlässig und sicher.  
+- Die Benutzeroberfläche bleibt klar und einfach zu bedienen.
