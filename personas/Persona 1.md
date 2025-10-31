@@ -1,4 +1,4 @@
-# Persona: TikToker Leo 15 Jahre alt
+# Persona: TikToker Leo 
 
 - Leo ist ein 15-jähriger Schüler, der leidenschaftlich gerne TikTok-Videos dreht.
 In seinen Clips zeigt er verschiedene Outfits und experimentiert mit Farben und Stilen.
