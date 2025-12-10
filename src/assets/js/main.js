@@ -1,0 +1,1 @@
+// Hier steht der Code, der in allen html Dateien benutzt wird

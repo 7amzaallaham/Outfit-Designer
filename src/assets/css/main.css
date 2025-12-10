@@ -1,0 +1,3 @@
+/* Hier kommen die Sachen die auf allen Seiten gleich sind (Schriftart, Buttons, ...)
+wegen DRY
+in login.css kommen dann nur die Sachen, die nur in login.html benutzt werden */
