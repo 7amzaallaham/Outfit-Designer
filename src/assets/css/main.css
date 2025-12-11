@@ -1,3 +1,15 @@
 /* Hier kommen die Sachen die auf allen Seiten gleich sind (Schriftart, Buttons, ...)
 wegen DRY
 in login.css kommen dann nur die Sachen, die nur in login.html benutzt werden */
+
+/* viele flexboxen benutzen */
+
+button {
+    background-color: rgb(8, 128, 128);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    display: flex;
+}
