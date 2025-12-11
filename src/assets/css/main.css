@@ -4,12 +4,37 @@ in login.css kommen dann nur die Sachen, die nur in login.html benutzt werden */
 
 /* viele flexboxen benutzen */
 
-button {
-    background-color: rgb(8, 128, 128);
-    display: flex;
-    flex-wrap: wrap;
+:root {           /* globale Variablen (z.B. Farbe) */
+    --blau: rgb(27, 126, 219);      /* color: var(--blau)  um das irgendwo zu benutzen  https://stackoverflow.com/questions/15831657/creating-css-global-variables-stylesheet-theme-management*/
 }
 
 div {
     display: flex;
+    justify-content: center;
+    background-color: var(--blau);     /*erstmal nur zum testen damit man es sieht */
+}
+
+input {
+    background-color: rgb(212, 214, 211);
+    padding: 10px;
+    border-radius: 15px;    /*wird dadurch rund*/
+}
+
+input:hover {
+    background-color: rgb(224, 161, 161);
+}
+
+header {     /*das werden wir für Community|Garderobe|neues Outfit benutzen*/
+    background-color: chocolate;
+    display: flex;
+    justify-content: stretch
+}
+
+
+button:hover {
+    background-color: rgb(55, 122, 122)
+}
+
+.tab {     /*klasse die wir für die tabs im header benutzen werden vielleicht */
+
 }
