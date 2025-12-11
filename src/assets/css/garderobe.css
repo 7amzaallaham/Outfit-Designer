@@ -1,0 +1,24 @@
+.filter-button {
+    background: none;
+    border: none;
+
+}
+.filter-button img {
+    width: 25px;
+    height: 25px;
+    background: white;
+}
+
+.outfit-view {
+}
+.clothing-item {
+}
+.clothing-item img {
+    width: 100px;
+}
+
+.load-more-button {
+}
+
+.add-button {
+}
