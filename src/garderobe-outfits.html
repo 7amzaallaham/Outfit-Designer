@@ -7,22 +7,23 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/garderobe.css" rel="stylesheet">
 </head>
-<header>
-    <button onclick="window.location.href='community.html'">community</button>
-    <button onclick="window.location.href='garderobe-outfits.html'">garderobe</button>
-    <button onclick="window.location.href='neuesOutfit.html'">neues Outfit</button>
-</header>
 <body>
-    <nav>
-        <button onclick="window.location.href='garderobe-outfits.html'">Outfits</button>
-        <button onclick="window.location.href='garderobe-tshirts.html'">T-Shirts</button>
-        <button onclick="window.location.href='garderobe-hosen.html'">Hosen</button>
-        <button onclick="window.location.href='garderobe-schuhe.html'">Schuhe</button>
+    <nav class="navLeiste">
+    <a href="community-profil.html" class="tab tab_inaktiv">Community</a>
+    <a href="garderobe-outfits.html" class="tab tab_aktiv">Garderobe</a>
+    <a href="neuesOutfit.html" class="tab tab_inaktiv">neues Outfit</a>
     </nav>
 
-<button class="filter-button">
-  <img src="assets/images/filter.jpg">
-</button>
+    <nav class="navLeiste_sekundär">
+    <a href="garderobe-outfits.html" class="tab tab_aktiv">Outfits</a>
+    <a href="garderobe-tshirts.html" class="tab tab_inaktiv">T-Shirts</a>
+    <a href="garderobe-hosen.html" class="tab tab_inaktiv">Hosen</a>
+    <a href="garderobe-schuhe.html" class="tab tab_inaktiv">Schuhe</a>
+    </nav>
+
+    <button class="filter-button">
+    <img src="assets/images/filter.jpg">
+    </button>
 
     <section class="outfit-view">
         <div class="clothing-item">
@@ -39,7 +40,7 @@
         </div>
     </section>
 
-<button class="load-more-button">Mehr Laden...</button>
-<button class="add-button">+</button>
+    <button class="load-more-button">Mehr Laden...</button>
+    <button class="add-button">+</button>
 </body>
 </html>

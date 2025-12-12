@@ -24,17 +24,44 @@ input:hover {
     background-color: rgb(224, 161, 161);
 }
 
-header {     /*das werden wir für Community|Garderobe|neues Outfit benutzen*/
-    background-color: chocolate;
-    display: flex;
-    justify-content: stretch
-}
-
-
 button:hover {
+    scale: 1.10;                           /*button bewegt sich beim hovern */
     background-color: rgb(55, 122, 122)
 }
 
-.tab {     /*klasse die wir für die tabs im header benutzen werden vielleicht */
+.navLeiste {
+    display: flex;
+    justify-content: center;    /*stretch*/
+    background-color: magenta;
+}
 
+.navLeiste_sekundär {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(225, 172, 72);
+    /*hier muss noch was hin damit es kleiner ist*/
+}
+
+img:hover {
+    scale: 1.10;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 100px;
+}
+
+.tab_aktiv {
+    background-color: var(--blau);
+}
+
+.tab_inaktiv {
+    background-color: rgb(212, 208, 208);
+}
+
+.tab:hover {
+    background-color: rgb(88, 88, 124);
+    scale: 1.10;
 }

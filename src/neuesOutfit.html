@@ -6,26 +6,58 @@
     <title>neues Outfit</title>
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/neuesOutfit.css" rel="stylesheet">
+    <script src="assets/js/neuesOutfit.js"></script>
 </head>
-<header>
-    <button onclick="window.location.href='community.html'">community</button>
-    <button onclick="window.location.href='garderobe-outfits.html'">garderobe</button>
-    <button onclick="window.location.href='neuesOutfit.html'">neues Outfit</button>
-</header>
+
 <body>
+    <nav class="navLeiste">
+    <a href="community-profil.html" class="tab tab_inaktiv">Community</a>
+    <a href="garderobe-outfits.html" class="tab tab_inaktiv">Garderobe</a>
+    <a href="neuesOutfit.html" class="tab tab_aktiv">neues Outfit</a>
+    </nav>
+
     <div>
-        <h1>neues outfit</h1>
+        <input type="text" value="Outfit 1">
     </div>
-    <p>---------------------------------------------------------</p>
-    <div>
-        <img src="assets/images/profilBild.jpg" alt="">
+
+    <div class="creatorZeile">
+        <button class="pfeil">
+            links
+        </button>
+        <div class="kleidungsBox">
+            <img src="assets/images/t-shirt1.jpg" alt="">
+        </div>
+        <button class="pfeil">
+            rechts
+        </button>
     </div>
-    <div>
-        <input>
-        <p>namen eingeben</p>
+
+    <div class="creatorZeile">
+        <button class="pfeil">
+            links
+        </button>
+        <div class="kleidungsBox">
+            <img src="assets/images/hose1.jpg" alt="">
+        </div>
+        <button class="pfeil">
+            rechts
+        </button>
     </div>
+
+    <div class="creatorZeile">
+        <button class="pfeil">
+            links
+        </button>
+        <div class="kleidungsBox">
+            <img src="assets/images/shuhe1.jpg" alt="">
+        </div>
+        <button class="pfeil">
+            rechts
+        </button>
+    </div>
+    
     <div>
-        <button>speichern</button>
+        <button>Outfit speichern</button>
     </div>
 </body>
 </html>
