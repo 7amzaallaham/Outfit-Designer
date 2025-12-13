@@ -1,24 +1,51 @@
-.filter-button {
-    background: none;
+.filter_button {
+    position: absolute;
+    right: 8px;
+    top: 115px;
+    background: lightgray;
     border: none;
-
+    width: 40px;
+    height: 40px;
 }
-.filter-button img {
+.filter_button img {
     width: 25px;
     height: 25px;
-    background: white;
 }
 
-.outfit-view {
+.kleidungsstück_vorschau {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*guck für landscape orientation später*/
+    gap: 15px;
+    max-width: 400px;
+    margin: 55px auto 12px; /* top/ left and righ/ bottom */
 }
-.clothing-item {
+.kleidungsstück {
+    position: relative;
 }
-.clothing-item img {
-    width: 100px;
+.kleidungsstück img {
+    width: 100%;
 }
 
-.load-more-button {
+.three-dots {
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+    height: 25px;
+    width: 29px;
+    font-size: 18px;
+    background: lightgray;
+    border: none;
 }
 
-.add-button {
+
+.mehr_laden_button {
+
+}
+.add_button {
+    position:fixed;
+    bottom: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
 }
