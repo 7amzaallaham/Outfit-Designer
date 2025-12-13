@@ -20,13 +20,12 @@
     margin: 55px auto 12px; /* top/ left and righ/ bottom */
 }
 .kleidungsstück {
-    position: relative;
+    position: relative; /*für löschen_veröffentlichen button*/
 }
 .kleidungsstück img {
     width: 100%;
 }
-
-.three-dots {
+.löschen_veröffentlichen {
     position: absolute;
     bottom: 1px;
     right: 10px;
@@ -39,7 +38,7 @@
 
 
 .mehr_laden_button {
-
+    
 }
 .add_button {
     position:fixed;
