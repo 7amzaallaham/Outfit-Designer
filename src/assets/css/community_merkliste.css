@@ -1,1 +1,12 @@
+:root {
+  --blau: rgb(27, 126, 219);
+}
 
+.outfit-card {
+  background-color: white;
+  width: 350px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
