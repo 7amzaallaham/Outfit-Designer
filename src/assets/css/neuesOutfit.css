@@ -6,7 +6,7 @@ img {
 .creatorZeile {
     display: flex;
     justify-content: space-around;
-    background-color: chartreuse;
+    background-color: #7fff00;
     padding: 20px;
     
 }
