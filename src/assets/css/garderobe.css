@@ -2,7 +2,7 @@
     position: absolute;
     right: 8px;
     top: 115px;
-    background: lightgray;
+    background: var(--hellgrau); /*von main*/
     border: none;
     width: 40px;
     height: 40px;
@@ -11,10 +11,58 @@
     width: 25px;
     height: 25px;
 }
+.filter_popup {
+    display: none; /*inaktiv*/
+    position: absolute;
+    right: 8px;
+    top: 156px;
+    width: 200px;
+    background-color: var(--hellgrau); /*von main*/
+    padding: 10px;
+    z-index: 1; /* pop up wird über Bilder */
+    flex-direction: column;
+}
+.filter_popup.aktiv {
+    display: flex; 
+}
+.filter_title {
+    text-align: center;
+}
+
+.farben_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+.farbe {
+    width: 28px;
+    height: 28px;
+}
+.braun { background: burlywood; }
+.rot { background: red; }
+.gruen { background: green; }
+.rosa { background: pink; }
+.orange { background: orange; }
+.gelb { background: yellow; }
+.schwarz { background: black }
+
+
+.marken_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.anwenden_button {
+    background-color: var(--blau);
+    color: white;
+    border: none;
+    font-size: 18px;
+}
 
 .kleidungsstück_vorschau {
     display: grid;
-    grid-template-columns: 1fr 1fr; /*guck für landscape orientation später*/
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
     max-width: 400px;
     margin: 55px auto 12px; /* top/ left and righ/ bottom */
@@ -32,7 +80,7 @@
     height: 25px;
     width: 29px;
     font-size: 18px;
-    background: lightgray;
+    background: var(--hellgrau); /*von main*/
     border: none;
 }
 

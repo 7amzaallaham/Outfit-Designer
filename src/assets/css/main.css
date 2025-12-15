@@ -6,12 +6,13 @@ in login.css kommen dann nur die Sachen, die nur in login.html benutzt werden */
 
 :root {           /* globale Variablen (z.B. Farbe) */
     --blau: rgb(27, 126, 219);      /* color: var(--blau)  um das irgendwo zu benutzen  https://stackoverflow.com/questions/15831657/creating-css-global-variables-stylesheet-theme-management*/
+    --hellgrau: rgb(205, 205, 205);
 }
 
 div {
     display: flex;
     justify-content: center;
-    background-color: var(--blau);     /*erstmal nur zum testen damit man es sieht */
+   
 }
 
 input {
