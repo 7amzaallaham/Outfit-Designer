@@ -48,3 +48,18 @@
     justify-content: space-between;
     padding: 5px 2px;
 }
+
+.likes, .comments {
+    font-size: 14px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--blau);
+    color: white;
+    cursor: pointer;
+}
+
+.likes:hover, .comments:hover {
+    background-color: rgb(20, 100, 180);
+    scale: 1.05;
+}
