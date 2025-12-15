@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Community Entdecken</title>
+
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="hier die passende css datei" rel="stylesheet">
+    <link href="assets/css/community_entdecken.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navLeiste">
@@ -20,27 +21,26 @@
     <a href="community-merkliste.html" class="tab tab_inaktiv">Merkliste</a>
     </nav>
 
-    <main>
 
     <section class="outfit-card">
         <div class="user-info">
-            <img class="user-icon" alt="User Icon">
+        <img class="user-icon" alt="User Icon">
         <span class="username">Influencer_Lübeck37</span>
-        </div>
+    </div>
 
         <h3 class="outfit-title">Outfit Lübeck</h3>
 
         <img class="outfit-image" alt="Outfit Bild">
 
         <div class="stats">
-           <div class="likes">Likes: <span>2490</span></div>
-            <div class="comments">Kommentare: <span>395</span></div>
+          <button class="likes">Likes: <span>2490</span></button>
+        <button class="comments">Kommentare: <span>395</span></button>
         </div>
     </section>
 
     <section class="outfit-card">
         <div class="user-info">
-           <img class="user-icon" alt="User Icon">
+          <img class="user-icon" alt="User Icon">
           <span class="username">road_to_10k</span>
         </div>
 
@@ -49,8 +49,10 @@
         <img class="outfit-image" alt="Outfit Bild">
 
         <div class="stats">
-    <div class="likes">Likes: <span>1320</span></div>
-         <div class="comments">Kommentare: <span>210</span></div>
+
+         <button class="likes">Likes: <span>1320</span></button>
+         <button class="comments">Kommentare: <span>210</span></button>
+
         </div>
     </section>
 
