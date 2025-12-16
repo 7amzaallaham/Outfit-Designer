@@ -19,11 +19,13 @@
 }
 
 .user-icon {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    background-color: lightgray;
+    object-fit: cover;     
+    object-position: center;
 }
+
 
 .outfit-title {
     margin: 10px 0;
