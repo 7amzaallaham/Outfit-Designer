@@ -51,6 +51,7 @@
 .stats {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .community_like,
