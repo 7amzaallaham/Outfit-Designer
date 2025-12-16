@@ -1,17 +1,54 @@
-function nextTshirt(tshirt) {
-    let index = 0;
-
+function nextShirt() {
     const bild = document.getElementById("tshirtBild");
-
-    bild.bild = tshirt.bild;
+    let index = Math.floor(Math.random() * 3);            //Zufallszahl zwischen 0 und 4
+    bild.src = tshirts_liste[index].bild;
 }
 
-document.getElementById("nextTshirt").addEventListener("click", () => {
-    nextTshirt(tshirts_liste[index]);
+document.getElementById("nextTshirt").addEventListener("click", nextShirt);
+document.getElementById("previousTshirt").addEventListener("click", nextShirt);
 
-    index++;
+//--------------------------------
 
-    if (index >= tshirts.length) {
-        index = 0; // wieder von vorne
-    }
+function nextHose() {
+    const bild = document.getElementById("hoseBild");
+    let index = Math.floor(Math.random() * 3);
+    bild.src = hosen_liste[index].bild;
+}
+
+document.getElementById("previousHose").addEventListener("click", nextHose);
+document.getElementById("nextHose").addEventListener("click", nextHose);
+
+// -------------------------------
+
+function nextSchuhe() {
+    const bild = document.getElementById("schuheBild");
+    let index = Math.floor(Math.random() * 3);
+    bild.src = schuhe_liste[index].bild;
+}
+
+document.getElementById("previousSchuhe").addEventListener("click", nextSchuhe);
+document.getElementById("nextSchuhe").addEventListener("click", nextSchuhe);
+
+//---------------------------------
+
+document.getElementById("speichernButton").addEventListener("click", () => {
+    alert("Outfit gespeichert");
+    window.location.href = "garderobe-outfits.html";
 });
+
+//---------------------------------
+
+document.getElementById("boxTshirt").addEventListener("click", () => {
+    window.location.href = "garderobe-tshirts.html";
+});
+
+document.getElementById("boxHose").addEventListener("click", () => {
+    window.location.href = "garderobe-hosen.html";
+});
+
+document.getElementById("boxSchuhe").addEventListener("click", () => {
+    window.location.href = "garderobe-schuhe.html";
+});
+
+
+

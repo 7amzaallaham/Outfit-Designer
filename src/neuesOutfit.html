@@ -6,8 +6,8 @@
     <title>neues Outfit</title>
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/neuesOutfit.css" rel="stylesheet">
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/neuesOutfit.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/neuesOutfit.js" defer></script>
 </head>
 
 <body>
@@ -22,43 +22,46 @@
     </div>
 
     <div class="creatorZeile">
-        <button class="pfeil">
-            links
+        <button id="previousTshirt" class="pfeil">
+            ⬅️
         </button>
-        <div class="kleidungsBox">
-            <img id="tshirtBild" src="" alt="">
+        <div id="boxTshirt" class="kleidungsBox">
+            <img id="tshirtBild" src="assets/images/t-shirt2.jpg" alt="">
         </div>
         <button id="nextTshirt" class="pfeil">
-            rechts
+            ➡️
         </button>
     </div>
 
     <div class="creatorZeile">
-        <button class="pfeil">
-            links
+        <button id="previousHose" class="pfeil">
+            ⬅️
         </button>
-        <div class="kleidungsBox">
-            <img src="assets/images/hose1.jpg" alt="">
+        <div id="boxHose" class="kleidungsBox">
+            <img id="hoseBild" src="assets/images/hose1.jpg" alt="">
         </div>
-        <button class="pfeil">
-            rechts
+        <button id="nextHose" class="pfeil">
+            ➡️
         </button>
     </div>
 
     <div class="creatorZeile">
-        <button class="pfeil">
-            links
+        <button id="previousSchuhe" class="pfeil">
+            ⬅️
         </button>
-        <div class="kleidungsBox">
-            <img src="assets/images/shuhe1.jpg" alt="">
+        <div id="boxSchuhe" class="kleidungsBox">
+            <img id="schuheBild" src="assets/images/shuhe1.jpg" alt="">
         </div>
-        <button class="pfeil">
-            rechts
+        <button id="nextSchuhe" class="pfeil">
+            ➡️
         </button>
     </div>
     
     <div>
-        <button>Outfit speichern</button>
+        <button id="speichernButton">Outfit speichern</button>
     </div>
+
+   
+
 </body>
 </html>
