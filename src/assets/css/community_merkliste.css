@@ -35,9 +35,12 @@
 
 .merk-buttons {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    flex-direction: column;   
+    align-items: flex-end;    
+    gap: 6px;                 
+    margin-top: 10px;       
 }
+
 
 .community_like,
 .community_comment {
