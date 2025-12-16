@@ -39,10 +39,11 @@
     margin-bottom: 10px;
 }
 
+
 .stats {
     display: flex;
     justify-content: space-between;
-    padding: 5px 2px;
+    margin-top: 10px;
 }
 
 .stats div {
@@ -50,9 +51,10 @@
     align-items: center;
     gap: 6px;
     background-color: var(--blau);
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 6px;
     color: white;
+    font-size: 14px;
 }
 
 .stats div img {
