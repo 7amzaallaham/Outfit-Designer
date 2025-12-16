@@ -21,8 +21,8 @@
 .user-icon {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     background-color: lightgray;
+    border-radius: 50%;
 }
 
 .outfit-title {
@@ -36,42 +36,21 @@
     height: 260px;
     background-color: #ddd;
     border-radius: 8px;
-    margin-bottom: 10px;
 }
 
 .stats {
     display: flex;
     justify-content: space-between;
-    padding: 5px 2px;
+    margin-top: 10px;
 }
 
-/* Buttons (CARD 1) */
-.likes, .comments {
-    font-size: 14px;
-    padding: 6px 10px;
-    border: none;
-    border-radius: 6px;
+.community_like,
+.community_comment {
     background-color: var(--blau);
     color: white;
-    cursor: pointer;
-}
-
-.likes:hover, .comments:hover {
-    background-color: rgb(20, 100, 180);
-    scale: 1.05;
-}
-
-/* Icons (CARD 2) */
-.stats div {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background-color: var(--blau);
+    border: none;
     padding: 6px 12px;
     border-radius: 6px;
-    color: white;
-}
-.stats div img {
-    width: 18px;
-    height: 18px;
+    font-size: 14px;
+    cursor: pointer;
 }
