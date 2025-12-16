@@ -10,6 +10,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
 .user-info {
     display: flex;
     align-items: center;
@@ -22,11 +23,6 @@
     height: 40px;
     border-radius: 50%;
     background-color: lightgray;
-}
-
-.username {
-    font-weight: bold;
-    font-size: 14px;
 }
 
 .outfit-title {
@@ -49,6 +45,7 @@
     padding: 5px 2px;
 }
 
+/* Buttons (CARD 1) */
 .likes, .comments {
     font-size: 14px;
     padding: 6px 10px;
@@ -62,4 +59,19 @@
 .likes:hover, .comments:hover {
     background-color: rgb(20, 100, 180);
     scale: 1.05;
+}
+
+/* Icons (CARD 2) */
+.stats div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--blau);
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: white;
+}
+.stats div img {
+    width: 18px;
+    height: 18px;
 }
