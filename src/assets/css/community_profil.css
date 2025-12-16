@@ -34,12 +34,14 @@
 }
 
 .outfit-image {
-    width: 100%;
-    height: 260px;
-    background-color: #ddd;
-    border-radius: 8px;
+    width: 100%;             
+    height: 260px;           
+    object-fit: cover;       
+    object-position: center; 
+    border-radius: 8px;      
     margin-bottom: 10px;
 }
+
 
 .stats {
     display: flex;
