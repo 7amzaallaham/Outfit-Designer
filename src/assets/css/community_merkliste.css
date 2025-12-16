@@ -8,6 +8,7 @@
     margin: 20px auto;
     padding: 15px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     overflow: hidden;
     position: relative;
   
@@ -25,6 +26,7 @@
     height: 45px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center;
   
 }
 
@@ -42,6 +44,7 @@
     background-color: white;
     border-radius: 8px;
     margin-bottom: 10px;
+    margin-top: 10px;
   
 }
 
@@ -58,6 +61,7 @@
 .stats {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 
 }
 
@@ -72,10 +76,4 @@
   font-size: 14px;
 
   
-}
-
-.likes:hover,
-.comments:hover {
-    background-color: rgb(20, 100, 180);
-    scale: 1.05;
 }
