@@ -1,66 +1,56 @@
 :root {
-  --blau: rgb(27, 126, 219);
+    --blau: rgb(27, 126, 219);
+    --hellgrau: rgb(205, 205, 205);
 }
 
-.outfit-card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.user-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
 
 .merkliste-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    width: 90%;
+    width: 80%;
     margin: 30px auto;
 }
 
-
-.user-icon {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
-.outfit-image {
-    width: 100%;
-    height: 240px;
-    object-fit: contain;
-    background-color: #fff;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.stats {
+.merk-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    position: relative;
     display: flex;
-    justify-content: space-between;
-  
+    justify-content: center;
+    align-items: center;
 }
 
-.community_like,
-.community_comment {
-    background-color: var(--blau);
-    color: white;
-    padding: 6px 15px;
-  border: none;
-    border-radius: 6px;
+
+.merk-image {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;  
+    background-color: white;
+    border-radius: 8px;
+}
+
+.icon-heart {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 26px;
+    color: red;
     cursor: pointer;
-    font-size: 14px;
 }
 
-.community_like:hover,
-.community_comment:hover {
-    background-color: rgb(20,100,180);
-    scale: 1.05;
+.icon-comment {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.icon-heart:hover,
+.icon-comment:hover {
+    scale: 1.10;
+    transition: 0.2s ease;
 }
