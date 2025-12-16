@@ -39,25 +39,18 @@
     margin-bottom: 10px;
 }
 
-
 .stats {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
-.stats div {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+.community_like,
+.community_comment {
     background-color: var(--blau);
-    padding: 6px 14px;
-    border-radius: 6px;
     color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
     font-size: 14px;
-}
-
-.stats div img {
-    width: 18px;
-    height: 18px;
 }
