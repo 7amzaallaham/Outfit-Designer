@@ -9,6 +9,8 @@
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    position: relative;
 }
 
 .user-info {
@@ -41,7 +43,8 @@
     border-radius: 8px;  
     margin-top: 10px;
     margin-bottom: 10px;
-    overflow: hidden;
+
+    
 }
 
 
