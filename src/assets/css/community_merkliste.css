@@ -2,6 +2,7 @@
     --blau: rgb(27, 126, 219);
 }
 
+
 .merkliste-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -10,36 +11,34 @@
     margin: 40px auto;
 }
 
-.outfit-card {
+
+.merkliste-card {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     padding: 15px;
-    overflow: hidden;
+    overflow: hidden;         
     position: relative;
-    transition: transform 0.2s ease;
-
 }
 
-.outfit-image {
+
+.merkliste-img {
     width: 100%;
     height: 260px;
-    object-fit: contain;
-    overflow: hidden;
+    object-fit: cover;          
+    border-radius: 8px;
     transition: transform 0.25s ease-in-out;
-
 }
 
-.outfit-card:hover .outfit-image {
-    transform: scale(1.07);   
-
+.merkliste-card:hover .merkliste-img {
+    transform: scale(1.07);     
 }
 
-.stats {
+
+.merk-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-
 }
 
 .community_like,
