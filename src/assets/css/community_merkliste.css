@@ -5,42 +5,38 @@
 .merkliste-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 30px;
     width: 75%;
     margin: 40px auto;
 }
 
-.merkliste-card {
+.outfit-card {
     background: white;
     border-radius: 12px;
-    width: 260px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease;
 }
 
-.merkliste-img {
-    width: 70%;
-    height: 240px;
+.outfit-image {
+    width: 100%;
+    height: 260px;
     object-fit: contain;
-    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease;
 }
 
-.merkliste-card:hover .merkliste-img {
-    transform: scale(1.05);
+.outfit-card:hover .outfit-image {
+    transform: scale(1.07);
 }
 
-.merk-buttons {
+.stats {
     display: flex;
-    flex-direction: column;   
-    align-items: flex-end;    
-    gap: 6px;                 
-    margin-top: 10px;       
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
 }
-
 
 .community_like,
 .community_comment {
@@ -51,7 +47,6 @@
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
-    width: 100%;
 }
 
 .community_like:hover,
