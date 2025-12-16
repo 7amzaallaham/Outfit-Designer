@@ -49,15 +49,17 @@
     padding: 5px 2px;
 }
 
-.likes,
-.comments {
-    font-size: 14px;
-    padding: 6px 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: var(--blau);
-    color: white;
-    cursor: pointer;
+.community_like,
+.community_comment {
+  background-color: var(--blau);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+
+  
 }
 
 .likes:hover,
