@@ -35,9 +35,9 @@
 
 .outfit-image {
     width: 100%;             
-    height: 260px;           
-    object-fit: cover;       
-    object-position: center; 
+    height: 320px;           
+    object-fit: contain; 
+    background-color: white;
     border-radius: 8px;      
     margin-bottom: 10px;
 }
