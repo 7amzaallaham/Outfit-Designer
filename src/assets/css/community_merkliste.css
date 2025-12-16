@@ -7,7 +7,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     justify-items: center;
-    width: 80%;
+    width: 85%;
     margin: 40px auto;
 }
 
@@ -15,8 +15,8 @@
     width: 300px;
     background: white;
     border-radius: 12px;
-    padding: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@
 
 .merkliste-img {
     width: 100%;
-    height: 280px;
+    height: 270px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .community_like,
@@ -41,8 +41,14 @@
     background-color: var(--blau);
     color: white;
     border: none;
-    padding: 7px 14px;
+    padding: 7px 12px;
     border-radius: 6px;
     font-size: 14px;
     cursor: pointer;
+}
+
+.community_like:hover,
+.community_comment:hover {
+    background-color: rgb(20, 100, 180);
+    scale: 1.05;
 }
