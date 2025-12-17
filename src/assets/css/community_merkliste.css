@@ -27,7 +27,9 @@
 
 .stats {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;   
+    align-items: flex-end;    
+    gap: 8px;                
     margin-top: 10px;
 }
 
