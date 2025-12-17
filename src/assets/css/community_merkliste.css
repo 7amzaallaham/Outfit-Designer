@@ -1,9 +1,9 @@
 .merkliste_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    width: 45%;
-    margin: 50px auto;
+    gap: 10px;
+    width: 60%;        
+    margin: 30px auto; 
 }
 
 
@@ -15,8 +15,9 @@
     padding: 8px;
     overflow: hidden;
     position: relative;
-    max-width: 260px;
+    max-width: 100%;   
 }
+
 
 
 .outfit_bild {
