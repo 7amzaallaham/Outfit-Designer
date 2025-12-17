@@ -6,8 +6,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    width: 60%;
-    margin: 40px auto;
+    width: 55%;
+    margin: 50px auto;
 }
 
 .outfit-card {
