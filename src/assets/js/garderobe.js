@@ -1,6 +1,11 @@
-const filterButton = document.querySelector(".filter_button");
-const filterPopup = document.getElementById("filterPopup");
+function filterPopupToggle() {
+    document.getElementById("filterPopup").classList.toggle("aktiv");
+}
 
-filterButton.addEventListener("click", function(e) {
-    filterPopup.classList.toggle("aktiv"); 
-});
+document.getElementById("filterButton").addEventListener("click", filterPopupToggle);
+
+function addPopupToggle() {
+    document.getElementById("addPopup").classList.toggle("aktiv");
+}
+
+document.getElementById("addButton").addEventListener("click", addPopupToggle);

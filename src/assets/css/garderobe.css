@@ -96,3 +96,40 @@
     height: 30px;
     font-size: 20px;
 }
+.add_popup {
+    display: none; /*inaktiv*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    background-color: var(--hellgrau);
+    padding: 15px;
+
+    flex-direction: column;
+}
+.add_popup.aktiv {
+    display: flex;
+}
+.upload_title {
+    text-align: center;
+}
+.kamera_button {
+    background: var(--hellgrau);
+    border: none;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+.kamera_button img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.hochladen_button {
+    background-color: var(--blau);
+    color: white;
+    border: none;
+    font-size: 18px;
+}
