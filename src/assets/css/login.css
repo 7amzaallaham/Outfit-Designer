@@ -5,18 +5,18 @@ body {
 
 .login-screen {
     background-color: #b6bec7;
-    height: 100vh;
+    height: 100vh;                 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;      
+    align-items: center;           
 }
 
 .login-container {
     background: white;
-    width: 360px;
-    padding: 30px;
-    border-radius: 20px;
-    min-height: calc(100vh - 120px);
+    width: 360px;                  
+    padding: 30px;                
+    border-radius: 20px;           
+    min-height: calc(100vh - 120px); 
 }
 
 .login-title {
@@ -28,8 +28,9 @@ body {
     width: 200px;
     height: 200px;
     background-color: #b0b0b0;
-    border-radius: 50%;
-    margin: 0 auto 30px auto;
+    border-radius: 50%;            
+    margin: 0 auto 30px auto;      
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,17 +41,16 @@ body {
 }
 
 .form-group label {
-    display: block;
+    display: block;                
     margin-bottom: 5px;
 }
 
-
 .form-group input {
-    width: 100%;
-    box-sizing: border-box; 
+    width: 100%;                  
+    box-sizing: border-box;        
     padding: 10px;
     border: none;
-    background-color: #f2f2f2;
+    background-color: #f2f2f2;     
 }
 
 .login-btn {
@@ -61,7 +61,6 @@ body {
     color: white;
     border: none;
     font-size: 18px;
-    
 }
 
 .login-links {
@@ -70,12 +69,47 @@ body {
     justify-content: space-between;
 }
 
+
 .login-links a {
     text-decoration: none;
     color: gray;
 }
 
+
 .login-links .signup {
     color: #0095ff;
 }
 
+.popup-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  display: none;                  
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  width: 300px;
+  background: #c9c9c9;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.popup-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #0095ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-group input::placeholder {
+    color: #9a9a9a;
+    opacity: 1; /* für Chrome */
+}
