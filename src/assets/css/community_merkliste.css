@@ -2,6 +2,7 @@
     --blau: rgb(27, 126, 219);
 }
 
+
 .merkliste_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -9,6 +10,7 @@
     width: 45%;
     margin: 50px auto;
 }
+
 
 .outfit_karte {
     background-color: white;
@@ -26,11 +28,14 @@
     border-radius: 8px;
 }
 
+
 .interaktionen {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 10px;
     margin-top: 10px;
 }
+
 
 .community_like,
 .community_comment {
@@ -44,6 +49,7 @@
     width: 90px;
     text-align: center;
 }
+
 
 .community_like:hover,
 .community_comment:hover {
