@@ -35,7 +35,7 @@
 
 .farben_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* für 6 column */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 8px;
 }
 
@@ -87,7 +87,7 @@
     justify-content: center;
 }
 
-.aktion_popup {
+.aktion_popup {   /*löschen veröffentlichen popup */
     display: none; /*inaktive*/
     position: fixed;
     top: 50%;
@@ -101,10 +101,6 @@
 
 .aktion_popup.aktiv {
     display: flex;
-}
-
-.mehr_laden_button {
-    
 }
 
 .add_button {       /* + Button */
