@@ -1,9 +1,9 @@
 .merkliste_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
+    gap: 10px;
     width: 45%;
-    margin: 50px auto;
+    margin: 25px auto;
 }
 
 .outfit_karte {
