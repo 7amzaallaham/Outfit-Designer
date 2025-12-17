@@ -31,7 +31,7 @@
 
 .farben_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* für 6 column */
     gap: 8px;
 }
 .farbe {
@@ -45,7 +45,6 @@
 .orange { background: orange; }
 .gelb { background: yellow; }
 .schwarz { background: black }
-
 
 .marken_grid {
     display: grid;
@@ -80,10 +79,25 @@
     height: 25px;
     width: 29px;
     font-size: 18px;
-    background: var(--hellgrau); /*von main*/
+    background: var(--hellgrau);
     border: none;
 }
 
+.aktion_popup {
+    display: none; /*inaktive*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--hellgrau);
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aktion_popup.aktiv {
+    display: flex;
+}
 
 .mehr_laden_button {
     
@@ -105,7 +119,6 @@
     width: 260px;
     background-color: var(--hellgrau);
     padding: 15px;
-
     flex-direction: column;
 }
 .add_popup.aktiv {
@@ -131,7 +144,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--hellgrau);
+    background-color: var(--dunkelgrau);
     padding: 10px;
 }
 
