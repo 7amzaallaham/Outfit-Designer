@@ -1,7 +1,7 @@
 .merkliste_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 1px;
     width: 45%;
     margin: 50px auto;
 }
