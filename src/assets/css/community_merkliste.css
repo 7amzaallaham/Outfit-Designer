@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    width: 75%;
+    width: 60%;
     margin: 40px auto;
 }
 
