@@ -31,8 +31,9 @@
 
 .interaktionen {
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
     margin-top: 10px;
 }
 
