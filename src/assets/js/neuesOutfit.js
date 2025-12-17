@@ -1,7 +1,7 @@
 function nextShirt() {
     const bild = document.getElementById("tshirtBild");
-    let index = Math.floor(Math.random() * 3);            //Zufallszahl zwischen 0 und 4
-    bild.src = tshirts_liste[index].bild;
+    let index = Math.floor(Math.random() * 4);            //Zufallszahl zwischen 0 und 4
+    bild.src = tshirts_liste[index].bild;                  //in zukunft muss tshirts_liste.size() ermittelt werden
 }
 
 document.getElementById("nextTshirt").addEventListener("click", nextShirt);
@@ -11,7 +11,7 @@ document.getElementById("previousTshirt").addEventListener("click", nextShirt);
 
 function nextHose() {
     const bild = document.getElementById("hoseBild");
-    let index = Math.floor(Math.random() * 3);
+    let index = Math.floor(Math.random() * 4);
     bild.src = hosen_liste[index].bild;
 }
 
@@ -22,7 +22,7 @@ document.getElementById("nextHose").addEventListener("click", nextHose);
 
 function nextSchuhe() {
     const bild = document.getElementById("schuheBild");
-    let index = Math.floor(Math.random() * 3);
+    let index = Math.floor(Math.random() * 4);
     bild.src = schuhe_liste[index].bild;
 }
 
