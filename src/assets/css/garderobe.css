@@ -58,12 +58,6 @@
     gap: 8px;
 }
 
-.anwenden_button {
-    background-color: var(--blau);
-    color: white;
-    border: none;
-    font-size: 18px;
-}
 
 .kleidungsstück_vorschau {
     display: grid;
@@ -169,11 +163,4 @@
 .farbe_popup.aktiv {
     display: flex;
     gap: 10px;
-}
-
-.hochladen_button {
-    background-color: var(--blau);
-    color: white;
-    border: none;
-    font-size: 18px;
 }
