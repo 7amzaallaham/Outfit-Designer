@@ -54,5 +54,8 @@ class outfit {          //wird gerade noch nicht benutzt
 }
 
 var outfits_liste = [
-    new outfit("outfit 1", tshirts_liste[0], hosen_liste[0], schuhe_liste[0])
+    new outfit("outfit 1", tshirts_liste[0], hosen_liste[0], schuhe_liste[0]),
+    new outfit("outfit 2", tshirts_liste[1], hosen_liste[1], schuhe_liste[1]),
+    new outfit("outfit 3", tshirts_liste[2], hosen_liste[2], schuhe_liste[2]),
+    new outfit("outfit 4", tshirts_liste[3], hosen_liste[3], schuhe_liste[3])
 ];
