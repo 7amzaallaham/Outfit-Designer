@@ -1,10 +1,12 @@
 .merkliste_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    row-gap: 5px;
+    column-gap: 15px;
     width: 45%;
     margin: 25px auto;
 }
+
 
 .outfit_karte {
     background-color: white;
