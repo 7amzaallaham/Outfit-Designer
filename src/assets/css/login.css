@@ -109,7 +109,3 @@ body {
   cursor: pointer;
 }
 
-.form-group input::placeholder {
-    color: #9a9a9a;
-    opacity: 1; /* für Chrome */
-}
