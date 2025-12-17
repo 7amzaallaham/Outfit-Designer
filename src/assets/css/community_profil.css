@@ -1,10 +1,10 @@
 .outfit_karte {
-    background: var(--hellgrau);
+    background-color: white;
     width: 350px;
     margin: 20px auto;
     padding: 15px;
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 9px rgba(0,0,0,0.2);
     overflow: hidden;
     position: relative;
 }
@@ -48,14 +48,17 @@
 
 .community_like,
 .community_comment {
-    background: var(--hellgrau);
+    background-color: var(--blau);
+    padding: 12px;
+    margin: 5px;
+    border-radius: 15px;
     border: none;
-    padding: 10px 18px;
-    font-size: 14px;
     cursor: pointer;
+    box-shadow: 0 10px 9px rgba(0, 0, 0, 0.2);
 }
 
 .community_like:hover,
 .community_comment:hover {
-    background: var(--dunkelgrau);
+    scale: 1.10;
+    background-color: rgb(55, 122, 122);
 }
