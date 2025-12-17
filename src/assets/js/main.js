@@ -1,4 +1,4 @@
-class kleidungsstück {
+class kleidungsstück {         //Objekte die in neuesOutfit erstellt werden, beim speichern des Outfits
 
     constructor(name, farbe, bild, marke) {
         this.outfitname = name;
@@ -33,7 +33,7 @@ var schuhe_liste = [
 
 //----------------------------------------------------
 
-class outfit {
+class outfit {          //wird gerade noch nicht benutzt
 
     constructor(name, tshirt, hose, schuhe) {    //wie funktioniert es mit dem Bild fürs outfit??
         this.name = name;

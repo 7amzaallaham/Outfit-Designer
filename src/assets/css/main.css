@@ -13,7 +13,6 @@ in login.css kommen dann nur die Sachen, die nur in login.html benutzt werden */
 div {
     display: flex;
     justify-content: center;
-   
 }
 
 input {
@@ -22,6 +21,7 @@ input {
     border-radius: 15px;    /*wird dadurch rund*/
     margin: 20px;
     border: none;
+    box-shadow: 0 10px 9px rgba(0, 0, 0, 0.2);
 }
 
 input:hover {
@@ -34,6 +34,7 @@ button {
     margin: 5px;
     border-radius: 15px;
     justify-content: center;
+    box-shadow: 0 10px 9px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
@@ -69,7 +70,7 @@ img:hover {
     background-color: rgb(212, 208, 208);
     border-radius: 15px;
     color: black;
-    font-size: 17px
+    font-size: 17px;
 }
 
 .tab_aktiv {
