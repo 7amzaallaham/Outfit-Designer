@@ -125,7 +125,20 @@
     width: 40px;
     height: 40px;
 }
+.farbe_popup {
+    display: none; /*inaktive in add button popup*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--hellgrau);
+    padding: 10px;
+}
 
+.farbe_popup.aktiv {
+    display: flex;
+    gap: 10px;
+}
 
 .hochladen_button {
     background-color: var(--blau);
