@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Outfit Designer – Login</title>
-
+    
     <link rel="stylesheet" href="assets/css/login.css">    
 </head>
 <body>
 
 <div class="login-screen">
 
-    <div class="login-container">
+  <div class="login-container">
 
-        <h1 class="login-title">Outfit Designer</h1>
+    <h1 class="login-title">Outfit Designer</h1>
 
-        <div class="login-avatar">Profilbild</div>
+    <div class="login-avatar">Profilbild</div>
 
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input id="username" type="text" value="User_1">
-        </div>
-      
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input id="password" type="password" value="********">
-        </div>
-
-        <a href="garderobe-outfits.html">
-            <button class="login-btn">Log in</button>
-        </a>
-
-        <div class="login-links">
-            <a class="forgot" href="login.forgotPassword.html">Forgot password</a>
-            <a class="signup" href="login-signUp.html">Sign up</a>
-        </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        id="username"
+        type="text"
+        placeholder="User_1"
+        autocomplete="off">
     </div>
+
+    <div class="form-group">
+      
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="********"
+        autocomplete="new-password">
+    </div>
+
+    <button class="login-btn" id="loginBtn">Log in</button>
+
+    <div class="login-links">
+      <a class="forgot" href="login.forgotPassword.html">Forgot password</a>
+      <a class="signup" href="login-signUp.html">Sign up</a>
+    </div>
+
+  </div>
 </div>
-  
+
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <p id="popupText"></p>
+
+    <button id="popupOk" type="button">OK</button>
+  </div>
+</div>
+
+<script src="assets/js/login.js"></script>
+
 </body>
 </html>
-
-
