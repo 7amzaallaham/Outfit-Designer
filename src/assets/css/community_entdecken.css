@@ -2,7 +2,7 @@
     --blau: rgb(27, 126, 219);
 }
 
-.outfit-card {
+.outfit_karte {
     background-color: white;
     width: 350px;
     margin: 20px auto;
@@ -13,14 +13,14 @@
     position: relative;
 }
 
-.user-info {
+.benutzer_info {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
 }
 
-.user-icon {
+.benutzer_icon {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -28,14 +28,17 @@
     object-position: center;
 }
 
+.benutzername {
+    font-weight: bold;
+}
 
-.outfit-title {
+.outfit_titel {
     margin: 10px 0;
     font-size: 18px;
     font-weight: bold;
 }
 
-.outfit-image {
+.outfit_bild {
     width: 100%;
     height: 320px;
     object-fit: contain;
@@ -45,7 +48,7 @@
     margin-bottom: 10px;
 }
 
-.stats {
+.interaktionen {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
