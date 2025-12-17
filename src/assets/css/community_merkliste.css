@@ -5,7 +5,9 @@
     column-gap: 15px;
     width: 45%;
     margin: 25px auto;
+    align-items: start;
 }
+
 
 
 .outfit_karte {
