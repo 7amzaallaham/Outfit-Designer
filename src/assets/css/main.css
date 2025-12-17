@@ -5,7 +5,7 @@ in login.css kommen dann nur die Sachen, die nur in login.html benutzt werden */
 /* viele flexboxen benutzen */
 
 :root {           /* globale Variablen (z.B. Farbe) */
-    --blau: rgb(27, 126, 219);      /* color: var(--blau)  um das irgendwo zu benutzen  https://stackoverflow.com/questions/15831657/creating-css-global-variables-stylesheet-theme-management*/
+    --blau: rgb(27, 126, 219);      /* https://stackoverflow.com/questions/15831657/creating-css-global-variables-stylesheet-theme-management*/
     --hellgrau: rgb(205, 205, 205);
 }
 
@@ -19,10 +19,19 @@ input {
     background-color: rgb(212, 214, 211);
     padding: 10px;
     border-radius: 15px;    /*wird dadurch rund*/
+    margin: 20px;
 }
 
 input:hover {
-    background-color: rgb(224, 161, 161);
+    background-color: rgb(55, 122, 122)
+}
+
+button {
+    background-color: var(--blau);
+    padding: 12px;
+    margin: 5px;
+    border-radius: 15px;
+    justify-content: center;
 }
 
 button:hover {
@@ -33,18 +42,19 @@ button:hover {
 .navLeiste {
     display: flex;
     justify-content: center;    /*stretch*/
-    background-color: magenta;
+    background-color: var(--hellgrau)
 }
 
 .navLeiste_sekundär {
     display: flex;
     justify-content: center;
-    background-color: rgb(225, 172, 72);
+    background-color: var(--hellgrau);
     /*hier muss noch was hin damit es kleiner ist*/
 }
 
 img:hover {
     scale: 1.10;
+    border-radius: 30px;
 }
 
 .tab {
@@ -52,15 +62,14 @@ img:hover {
     justify-content: center;
     padding: 15px;
     width: 100px;
+    background-color: rgb(212, 208, 208);
+
 }
 
 .tab_aktiv {
     background-color: var(--blau);
 }
 
-.tab_inaktiv {
-    background-color: rgb(212, 208, 208);
-}
 
 .tab:hover {
     background-color: rgb(88, 88, 124);

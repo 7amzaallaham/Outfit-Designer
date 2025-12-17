@@ -29,3 +29,30 @@ var schuhe_liste = [
     new kleidungsstück("schuhe 3", "#249fd8ff", "assets/images/shuhe3.jpg", "H&M"),
     new kleidungsstück("schuhe 4", "#de1a75ff", "assets/images/shuhe4.jpg", "Zara")
 ];
+
+
+//----------------------------------------------------
+
+class outfit {
+
+    constructor(name, tshirt, hose, schuhe) {    //wie funktioniert es mit dem Bild fürs outfit??
+        this.name = name;
+        this.tshirt = tshirt;
+        this.hose = hose;
+        this.schuhe = schuhe;
+    }
+
+    getMarken() {
+        marken = [this.tshirt.marke, this.hose.marke, this.schuhe.marke]     //beim Filtern werden die Farben der Kleidungsstücke verwendet
+        return marken;
+    }
+
+    getFarben() {
+        farben = [this.tshirt.farbe, this.hose.farbe, this.schuhe.farbe]
+        return farben;
+    }
+}
+
+var outfits_liste = [
+    new outfit("outfit 1", tshirts_liste[0], hosen_liste[0], schuhe_liste[0])
+];

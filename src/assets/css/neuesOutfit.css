@@ -1,26 +1,30 @@
 img {
-    max-width: 100px;
-    max-height: 200px;
+    /* max-width: 100px;
+    max-height: 200px; */
+    width: 150px;
+    height: 150px;
 }
 
 .creatorZeile {
     display: flex;
     justify-content: space-around;
-    background-color: #7fff00;
     padding: 20px;
-    
 }
 
 .pfeil {
     scale: 1.10;
-    background-color: rgb(255, 252, 53);
+    background-color: var(--blau);
     border-radius: 15px;
 }
 
+.pfeil:hover {
+    scale: 1.20;
+}
+
 .kleidungsBox {
-    background-color: lightgray;
+    background-color: var(--hellgrau);
     display: flex;
     justify-content: center;
-    padding: 10px;     /*später weg*/
+    padding: 10px;
 }
 

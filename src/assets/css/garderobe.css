@@ -4,13 +4,15 @@
     top: 115px;
     background: var(--hellgrau); /*von main*/
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
+
 .filter_button img {
     width: 25px;
     height: 25px;
 }
+
 .filter_popup {
     display: none; /*inaktiv*/
     position: absolute;
@@ -22,9 +24,11 @@
     z-index: 1; /* pop up wird über Bilder */
     flex-direction: column;
 }
+
 .filter_popup.aktiv {
     display: flex; 
 }
+
 .filter_title {
     text-align: center;
 }
@@ -34,10 +38,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 8px;
 }
+
 .farbe {
     width: 28px;
     height: 28px;
 }
+
 .braun { background: burlywood; }
 .rot { background: red; }
 .gruen { background: green; }
@@ -67,35 +73,42 @@
     max-width: 400px;
     margin: 55px auto 12px; /* top/ left and righ/ bottom */
 }
+
 .kleidungsstück {
     position: relative; /*für löschen_veröffentlichen button*/
 }
+
 .kleidungsstück img {
     width: 100%;
 }
+
 .löschen_veröffentlichen {
     position: absolute;
     bottom: 1px;
     right: 10px;
-    height: 25px;
-    width: 29px;
+    height: 35px;
+    width: 35px;
     font-size: 18px;
     background: var(--hellgrau); /*von main*/
     border: none;
+    justify-content: center;
 }
 
 
 .mehr_laden_button {
     
 }
-.add_button {
+
+.add_button {       /* + Button */
     position:fixed;
     bottom: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     font-size: 20px;
+    justify-content: center;
 }
+
 .add_popup {
     display: none; /*inaktiv*/
     position: fixed;
@@ -111,20 +124,25 @@
 .add_popup.aktiv {
     display: flex;
 }
+
 .upload_title {
     text-align: center;
 }
+
 .kamera_button {
     background: var(--hellgrau);
     border: none;
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
     align-self: center;
+    justify-content: center;
 }
+
 .kamera_button img{
     width: 40px;
     height: 40px;
 }
+
 .farbe_popup {
     display: none; /*inaktive in add button popup*/
     position: absolute;
