@@ -21,6 +21,7 @@ input {
     padding: 10px;
     border-radius: 15px;    /*wird dadurch rund*/
     margin: 20px;
+    border: none;
 }
 
 input:hover {
@@ -43,19 +44,21 @@ button:hover {
 .navLeiste {
     display: flex;
     justify-content: center;    /*stretch*/
-    background-color: var(--hellgrau)
+    background-color: var(--hellgrau);
+    border-radius: 20px;
 }
 
 .navLeiste_sekundär {
     display: flex;
     justify-content: center;
     background-color: var(--hellgrau);
+    border-radius: 30px;
     /*hier muss noch was hin damit es kleiner ist*/
 }
 
 img:hover {
     scale: 1.10;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .tab {
@@ -64,7 +67,9 @@ img:hover {
     padding: 15px;
     width: 100px;
     background-color: rgb(212, 208, 208);
-
+    border-radius: 15px;
+    color: black;
+    font-size: 17px
 }
 
 .tab_aktiv {
