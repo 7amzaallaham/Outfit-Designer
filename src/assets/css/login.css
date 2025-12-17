@@ -1,8 +1,5 @@
-body {
-    margin: 0;   
-    font-family: Arial;
-}
 
+/* Login-Hintergrund & Zentrierung */
 .login-screen {
     background-color: #b6bec7;
     height: 100vh;                 
@@ -36,22 +33,6 @@ body {
     justify-content: center;
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;                
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 100%;                  
-    box-sizing: border-box;        
-    padding: 10px;
-    border: none;
-    background-color: #f2f2f2;     
-}
 
 .login-btn {
     width: 100%;
@@ -63,49 +44,18 @@ body {
     font-size: 18px;
 }
 
+/* Links unter dem Button */
 .login-links {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
 
-
 .login-links a {
     text-decoration: none;
     color: gray;
 }
 
-
 .login-links .signup {
     color: #0095ff;
 }
-
-.popup-overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.35);
-  display: none;                  
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-box {
-  width: 300px;
-  background: #c9c9c9;
-  padding: 25px 20px;
-  text-align: center;
-}
-
-.popup-box button {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  background: #0095ff;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
