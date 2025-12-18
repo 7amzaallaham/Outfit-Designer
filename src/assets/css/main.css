@@ -49,14 +49,6 @@ button:hover {
     border-radius: 20px;
 }
 
-.navLeiste_sekundär {
-    display: flex;
-    justify-content: center;
-    background-color: var(--hellgrau);
-    border-radius: 30px;
-    /*hier muss noch was hin damit es kleiner ist*/
-}
-
 img:hover {
     scale: 1.10;
     border-radius: 20px;
