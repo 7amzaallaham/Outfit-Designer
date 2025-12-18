@@ -69,6 +69,11 @@
 
 
 
+
+
+
+
+
 .community_like.active {
     background-color: #1e7b57;
 }
@@ -82,4 +87,18 @@
 .community_comment:active {
     transform: scale(0.95);
 }
+
+
+.comments {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.comments p {
+    background: #f2f2f2;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin: 4px 0;
+}
+
 
