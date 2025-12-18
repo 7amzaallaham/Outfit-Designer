@@ -3,30 +3,22 @@ class CommunityPost {
     constructor(likeButton, commentButton) {
         this.likeButton = likeButton;
         this.commentButton = commentButton;
-
-        this.likes = this.extractNumber(likeButton.innerText);
-        this.comments = this.extractNumber(commentButton.innerText);
-
-        this.initEvents();
+        this.liked = false;
     }
 
-    extractNumber(text) {
-        return parseInt(text.match(/\d+/));
-    }
+    toggleLike() {
+        this.liked = !this.liked;
+        this.likeButton.classList.toggle("active");
 
-    like() {
-        this.likes++;
-        this.likeButton.innerText = `Like (${this.likes})`;
-        this.likeButton.classList.add("active");
+        if (this.liked) {
+            this.likeButton.textContent = "Liked ❤️";
+        } else {
+            this.likeButton.textContent = "Like";
+        }
     }
 
     comment() {
         alert("Comment-Funktion kommt später 🙂");
-    }
-
-    initEvents() {
-        this.likeButton.addEventListener("click", () => this.like());
-        this.commentButton.addEventListener("click", () => this.comment());
     }
 }
 
@@ -36,7 +28,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const commentButtons = document.querySelectorAll(".community_comment");
 
     for (let i = 0; i < likeButtons.length; i++) {
-        new CommunityPost(likeButtons[i], commentButtons[i]);
+
+        const post = new CommunityPost(
+            likeButtons[i],
+            commentButtons[i]
+        );
+
+        likeButtons[i].addEventListener("click", () => {
+            post.toggleLike();
+        });
+
+        commentButtons[i].addEventListener("click", () => {
+            post.comment();
+        });
     }
 
 });
