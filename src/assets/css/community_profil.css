@@ -66,39 +66,3 @@
     scale: 1.10;
     background-color: rgb(55, 122, 122);
 }
-
-
-
-
-
-
-
-
-.community_like.active {
-    background-color: #1e7b57;
-}
-
-.community_like,
-.community_comment {
-    transition: transform 0.15s ease, background-color 0.15s ease;
-}
-
-.community_like:active,
-.community_comment:active {
-    transform: scale(0.95);
-}
-
-
-.comments {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.comments p {
-    background: #f2f2f2;
-    padding: 6px 10px;
-    border-radius: 8px;
-    margin: 4px 0;
-}
-
-
