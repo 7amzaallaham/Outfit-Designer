@@ -67,3 +67,19 @@
     background-color: rgb(55, 122, 122);
 }
 
+
+
+.community_like.active {
+    background-color: #1e7b57;
+}
+
+.community_like,
+.community_comment {
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.community_like:active,
+.community_comment:active {
+    transform: scale(0.95);
+}
+
