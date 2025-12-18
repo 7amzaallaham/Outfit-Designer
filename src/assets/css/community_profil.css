@@ -9,14 +9,12 @@
     position: relative;
 }
 
-
 .benutzer_info {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
 }
-
 
 .benutzer_icon {
     width: 45px;
@@ -25,18 +23,15 @@
     object-fit: cover;
 }
 
-
 .benutzername {
     font-weight: bold;
 }
-
 
 .outfit_titel {
     margin: 10px 0;
     font-size: 18px;
     font-weight: bold;
 }
-
 
 .outfit_bild {
     width: 100%;
@@ -45,31 +40,25 @@
     margin: 10px 0;
 }
 
-
 .interaktionen {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-
 .community_like,
 .community_comment {
-    background-color: var(--blau);         
-    color: white;
+    background-color: var(--blau);
     padding: 12px;
     margin: 5px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    font-size: 15px;
     box-shadow: 0 10px 9px rgba(0, 0, 0, 0.2);
-    transition: 0.15s ease-in-out;
-    
 }
 
 .community_like:hover,
 .community_comment:hover {
     scale: 1.10;
-    background-color: rgb(55, 122, 122);   
+    background-color: rgb(55, 122, 122);
 }
