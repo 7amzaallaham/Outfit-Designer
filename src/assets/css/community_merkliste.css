@@ -18,21 +18,20 @@
     max-width: 260px;
 }
 
-
 .outfit_bild {
     width: 100%;
-    height: 200px;              
-    object-fit: contain;        
-    background-color: white;    
-    padding: 8px;               
-    border-radius: 12px;        
+    height: 200px;
+    object-fit: contain;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
 }
 
 .interaktionen {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 6px;
+    gap: 3px;              
     margin-top: 6px;
 }
 
@@ -40,7 +39,7 @@
 .community_comment {
     background-color: var(--blau);
     padding: 12px;
-    margin: 5px;
+    margin: 0;            
     border-radius: 15px;
     border: none;
     cursor: pointer;
