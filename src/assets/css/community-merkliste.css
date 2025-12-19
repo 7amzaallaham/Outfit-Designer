@@ -9,7 +9,7 @@
 }
 
 .outfit_karte {
-    background-color: white;
+    background-color: var(--hellgrau);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     padding: 8px;
