@@ -23,6 +23,7 @@
     <a href="community-merkliste.html" class="tab">Merkliste</a>
 </nav>
 
+<!-- KART 1 -->
 <section class="outfit_karte">
     <div class="benutzer_info">
         <img class="benutzer_icon" src="assets/images/user.png" alt="User Icon">
@@ -34,11 +35,19 @@
     <img class="outfit_bild" src="assets/images/outfit1.jpg" alt="Outfit Bild">
 
     <div class="interaktionen">
-        <button class="community_like">Like (2490)</button>
-        <button class="community_comment">Comment (395)</button>
+        <button class="community_like">
+            Like (<span class="like_count">2490</span>)
+        </button>
+        <button class="community_comment">Comment</button>
+    </div>
+
+    <div class="comment_box hidden">
+        <input type="text" placeholder="Write a comment..." />
+        <button class="send_comment">Send</button>
     </div>
 </section>
 
+<!-- KART 2 -->
 <section class="outfit_karte">
     <div class="benutzer_info">
         <img class="benutzer_icon" src="assets/images/user.png" alt="User Icon">
@@ -50,10 +59,19 @@
     <img class="outfit_bild" src="assets/images/outfit2.jpg" alt="Outfit Bild">
 
     <div class="interaktionen">
-        <button class="community_like">Like (1320)</button>
-        <button class="community_comment">Comment (210)</button>
+        <button class="community_like">
+            Like (<span class="like_count">1320</span>)
+        </button>
+        <button class="community_comment">Comment</button>
+    </div>
+
+    <div class="comment_box hidden">
+        <input type="text" placeholder="Write a comment..." />
+        <button class="send_comment">Send</button>
     </div>
 </section>
+
+<script src="assets/js/community.js"></script>
 
 </body>
 </html>
