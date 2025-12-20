@@ -7,7 +7,9 @@ in login.css kommen dann nur die Sachen, die nur in login.html benutzt werden */
 :root {           /* globale Variablen (z.B. Farbe) */
     --blau: rgb(27, 126, 219);      /* https://stackoverflow.com/questions/15831657/creating-css-global-variables-stylesheet-theme-management*/
     --hellgrau: rgb(205, 205, 205);
+    --hellgrau2:rgba(205,205,205,0.7); /* hellgrau + transparent */
     --dunkelgrau: rgb(107, 107, 107);
+    --weiß: rgb(255, 255, 255);
 }
 
 div {
