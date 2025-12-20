@@ -8,18 +8,9 @@
     <link href="assets/css/garderobe.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navLeiste">
-    <a href="community-profil.html" class="tab">Community</a>
-    <a href="garderobe-outfits.html" class="tab tab_aktiv">Garderobe</a>
-    <a href="neuesOutfit.html" class="tab">neues Outfit</a>
-    </nav>
+    <nav-leiste aktiv="garderobe"></nav-leiste>
+    <nav-leiste-garderobe aktiv="hosen"></nav-leiste-garderobe>
 
-    <nav class="navLeiste">
-    <a href="garderobe-outfits.html" class="tab">Outfits</a>
-    <a href="garderobe-tshirts.html" class="tab">T-Shirts</a>
-    <a href="garderobe-hosen.html" class="tab tab_aktiv">Hosen</a>
-    <a href="garderobe-schuhe.html" class="tab">Schuhe</a>
-    </nav>
 <!--Filter-->
     <button id="filterButton" class="filter_button">
     <img src="assets/images/filter.jpg">
@@ -103,5 +94,7 @@
         <button id="hochladenButton" class="hochladen_button">Hochladen</button>
     </div>
     <script src="assets/js/garderobe.js"></script>
+    <script src="assets/js/nav-leiste.js"></script>
+    <script src="assets/js/nav-leiste-garderobe.js"></script>
 </body>
 </html>

@@ -43,7 +43,7 @@ document.getElementById("speichernButton").addEventListener("click", () => {    
 
 //--------------------------------------------------------------
 
-document.getElementById("boxTshirt").addEventListener("click", () => {
+document.getElementById("boxTshirt").addEventListener("click", () => {            //weiterleiten zur Garderobe wenn man auf die Kleidungsbox clickt
     window.location.href = "garderobe-tshirts.html";
 });
 
