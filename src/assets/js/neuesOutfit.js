@@ -1,42 +1,47 @@
-function nextShirt() {
-    const bild = document.getElementById("tshirtBild");
-    let index = Math.floor(Math.random() * 4);            //Zufallszahl zwischen 0 und 4
-    bild.src = tshirts_liste[index].bild;                  //in zukunft muss tshirts_liste.size() ermittelt werden
+function nextKleidungsstück(id, list) {           //Funktion die ein zufälliges Stück aus einer Liste nimmt und anzeigt (jetzt parametrisiert wegen DRY)
+    const bild = document.getElementById(id);
+    let index = Math.floor(Math.random() * 4);     //Zufallszahl zwischen 0 und 4
+    bild.src = list[index].bild;                   // ^ in zukunft muss list.size() ermittelt werden
 }
 
-document.getElementById("nextTshirt").addEventListener("click", nextShirt);
-document.getElementById("previousTshirt").addEventListener("click", nextShirt);
+
+document.getElementById("nextTshirt").addEventListener("click", () => {                    //tshirts Pfeile
+    nextKleidungsstück("tshirtBild", tshirts_liste)
+});
+
+document.getElementById("previousTshirt").addEventListener("click", () => {
+    nextKleidungsstück("tshirtBild", tshirts_liste)
+});
 
 //--------------------------------
 
-function nextHose() {
-    const bild = document.getElementById("hoseBild");
-    let index = Math.floor(Math.random() * 4);
-    bild.src = hosen_liste[index].bild;
-}
+document.getElementById("nextHose").addEventListener("click", () => {                     //hosen Pfeile
+    nextKleidungsstück("hoseBild", hosen_liste)
+});
 
-document.getElementById("previousHose").addEventListener("click", nextHose);
-document.getElementById("nextHose").addEventListener("click", nextHose);
+document.getElementById("previousHose").addEventListener("click", () => {
+    nextKleidungsstück("hoseBild", hosen_liste)
+});
 
-// -------------------------------
+//-------------------------------
 
-function nextSchuhe() {
-    const bild = document.getElementById("schuheBild");
-    let index = Math.floor(Math.random() * 4);
-    bild.src = schuhe_liste[index].bild;
-}
+document.getElementById("previousSchuhe").addEventListener("click", () => {              //schuhe Pfeile
+    nextKleidungsstück("schuheBild", schuhe_liste)
+});
 
-document.getElementById("previousSchuhe").addEventListener("click", nextSchuhe);
-document.getElementById("nextSchuhe").addEventListener("click", nextSchuhe);
+document.getElementById("nextSchuhe").addEventListener("click", () => {
+    nextKleidungsstück("schuheBild", schuhe_liste)
+});
 
-//---------------------------------
 
-document.getElementById("speichernButton").addEventListener("click", () => {
-    alert("Outfit gespeichert");
+//---------------------------------------------------------------
+
+document.getElementById("speichernButton").addEventListener("click", () => {       //Zukünftig wäre es sinvoll den Outfit Konstrukor 
+    alert("Outfit gespeichert");                                                   //aufzurufen und das Objekt in unserer Dummy liste speichern
     window.location.href = "garderobe-outfits.html";
 });
 
-//---------------------------------
+//--------------------------------------------------------------
 
 document.getElementById("boxTshirt").addEventListener("click", () => {
     window.location.href = "garderobe-tshirts.html";
