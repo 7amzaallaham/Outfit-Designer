@@ -1,41 +1,26 @@
-function filterPopup() {
-    document.getElementById("filterPopup").classList.toggle("aktiv");
+function togglePopup(popupId) {
+    document.getElementById(popupId).classList.toggle("aktiv");
 }
-function filterAnwenden() {
-    document.getElementById("filterPopup").classList.remove("aktiv");
-}
-
-document.getElementById("filterButton").addEventListener("click", filterPopup);
-document.getElementById("filterAnwendenButton").addEventListener("click", filterAnwenden);
-//-----------------
-
-function addPopup() {
-    document.getElementById("addPopup").classList.toggle("aktiv");
-}
-function hochladen() {
-  document.getElementById("addPopup").classList.remove("aktiv");
+function removePopup(popupId) {
+    document.getElementById(popupId).classList.remove("aktiv");
 }
 
-document.getElementById("addButton").addEventListener("click", addPopup);
-document.getElementById("hochladenButton").addEventListener("click", hochladen);
-//-----------------
+//Filter Popup
+document.getElementById("filterButton").addEventListener("click", () => togglePopup("filterPopup"));
+document.getElementById("filterAnwendenButton").addEventListener("click", () => removePopup("filterPopup"));
 
-function farbePopup() {
-    document.getElementById("farbePopup").classList.toggle("aktiv");
-}
+//Add / Hochladen Popup
+document.getElementById("addButton").addEventListener("click", () => togglePopup("addPopup"));
+document.getElementById("hochladenButton").addEventListener("click", () => removePopup("addPopup"));
 
-function farbeAnwenden() {
-    document.getElementById("farbePopup").classList.remove("aktiv");
-}
+//Farbe Popup in Hochladen Popup
+document.getElementById("farbeAuwahlenButton").addEventListener("click", () => togglePopup("farbePopup"));
+document.getElementById("farbeAnwenden").addEventListener("click", () => removePopup("farbePopup"));
 
-document.getElementById("farbeAuwahlenButton").addEventListener("click", farbePopup);
-document.getElementById("farbeAnwenden").addEventListener("click", farbeAnwenden);
-//---------------
 
+//Löschen / Veröffentlichen
 document.querySelectorAll(".löschen_veröffentlichen").forEach(button => {
-    button.addEventListener("click", () => {
-        document.getElementById("aktionPopup").classList.toggle("aktiv");
-    });
+    button.addEventListener("click", () => togglePopup("aktionPopup"));
 });
 
 document.getElementById("loschenButton").addEventListener("click", () => {
