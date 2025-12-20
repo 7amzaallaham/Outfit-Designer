@@ -1,3 +1,6 @@
+//Dummy-Daten
+//Es hat sich nicht gelohnt die Klassen in eigene Dateien auszulagern
+
 class kleidungsstück {         //Objekte die in neuesOutfit erstellt werden, beim speichern des Outfits
 
     constructor(name, farbe, bild, marke) {
@@ -35,7 +38,7 @@ var schuhe_liste = [
 
 class outfit {          //wird gerade noch nicht benutzt
 
-    constructor(name, tshirt, hose, schuhe) {    //wie funktioniert es mit dem Bild fürs outfit??
+    constructor(name, tshirt, hose, schuhe) {
         this.name = name;
         this.tshirt = tshirt;
         this.hose = hose;
@@ -43,7 +46,7 @@ class outfit {          //wird gerade noch nicht benutzt
     }
 
     getMarken() {
-        marken = [this.tshirt.marke, this.hose.marke, this.schuhe.marke]     //beim Filtern werden die Farben der Kleidungsstücke verwendet
+        marken = [this.tshirt.marke, this.hose.marke, this.schuhe.marke]     //beim Filtern von Outfits werden die Farben/Marken der Kleidungsstücke als Kriterium verwendet
         return marken;
     }
 

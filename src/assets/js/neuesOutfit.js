@@ -1,12 +1,12 @@
 function nextKleidungsstück(id, list) {           //Funktion die ein zufälliges Stück aus einer Liste nimmt und anzeigt (jetzt parametrisiert wegen DRY)
     const bild = document.getElementById(id);
     let index = Math.floor(Math.random() * 4);     //Zufallszahl zwischen 0 und 4
-    bild.src = list[index].bild;                   // ^ in zukunft muss list.size() ermittelt werden
+    bild.src = list[index].bild;                   //in Zukunft muss list.size() ermittelt werden
 }
 
 
 document.getElementById("nextTshirt").addEventListener("click", () => {                    //tshirts Pfeile
-    nextKleidungsstück("tshirtBild", tshirts_liste)
+    nextKleidungsstück("tshirtBild", tshirts_liste)                   //man konnte dieselbe id nicht zweimal vergeben, deswegen viele Duplikate
 });
 
 document.getElementById("previousTshirt").addEventListener("click", () => {
