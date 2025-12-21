@@ -62,6 +62,7 @@
   padding: 10px;
   border: none;
   background-color: var(--weiß);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .login-btn,
