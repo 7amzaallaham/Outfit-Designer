@@ -5,8 +5,16 @@ function nextKleidungsstück(id, list) {           //Funktion die ein zufällige
 }
 
 
-document.getElementById("nextTshirt").addEventListener("click", () => {                    //tshirts Pfeile
-    nextKleidungsstück("tshirtBild", tshirts_liste)                   //man konnte dieselbe id nicht zweimal vergeben, deswegen viele Duplikate
+// document.getElementById("nextTshirt").addEventListener("click", () => {                    //tshirts Pfeile
+//     nextKleidungsstück("tshirtBild", tshirts_liste)                   //man konnte dieselbe id nicht zweimal vergeben, deswegen viele Duplikate
+// });
+
+document.getElementById("nextTshirt").addEventListener("click", () => {
+    const bild = document.getElementById("tshirtBild");
+    fetch("http://localhost:8080/bild")
+    .then(response => response.text())
+    .then(path => bild.src = path)
+    .catch(error => alert(error));
 });
 
 document.getElementById("previousTshirt").addEventListener("click", () => {

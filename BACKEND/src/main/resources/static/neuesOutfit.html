@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neues Outfit</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/neuesOutfit.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav-leiste aktiv="neuesOutfit"></nav-leiste>     <!--WEB-COMPONENT-->
+
+    <div>
+        <input type="text" value="Outfit 1">
+    </div>
+
+    <div class="creatorZeile">
+        <button id="previousTshirt" class="pfeil">
+            ⬅️
+        </button>
+        <div id="boxTshirt" class="kleidungsBox">
+            <img id="tshirtBild" src="assets/images/t-shirt2.jpg" alt="">
+        </div>
+        <button id="nextTshirt" class="pfeil">
+            ➡️
+        </button>
+    </div>
+
+    <div class="creatorZeile">
+        <button id="previousHose" class="pfeil">
+            ⬅️
+        </button>
+        <div id="boxHose" class="kleidungsBox">
+            <img id="hoseBild" src="assets/images/hose1.jpg" alt="">
+        </div>
+        <button id="nextHose" class="pfeil">
+            ➡️
+        </button>
+    </div>
+
+    <div class="creatorZeile">
+        <button id="previousSchuhe" class="pfeil">
+            ⬅️
+        </button>
+        <div id="boxSchuhe" class="kleidungsBox">
+            <img id="schuheBild" src="assets/images/shuhe1.jpg" alt="">
+        </div>
+        <button id="nextSchuhe" class="pfeil">
+            ➡️
+        </button>
+    </div>
+    
+    <div>
+        <button id="speichernButton">Outfit speichern</button>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/neuesOutfit.js"></script>
+    <script src="assets/js/nav-leiste.js"></script>
+
+</body>
+</html>
