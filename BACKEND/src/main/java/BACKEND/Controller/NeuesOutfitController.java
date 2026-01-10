@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import static BACKEND.Service.NeuesOutfitService.*;
+import BACKEND.Model.Tshirt;
 
 @RestController
 @RequestMapping("/neuesoutfit")
@@ -26,6 +28,13 @@ public class NeuesOutfitController {
     @GetMapping("/bild")
     public String bild() {
         return "assets/images/shuhe4.jpg";
+    }
+
+    @GetMapping("/testservice")
+    public String testservice() {
+        Tshirt shirt = nextTshirt();          //funktion aus dem Service
+        String link = shirt.getBildpfad();
+        return link;
     }
 
     @GetMapping("/test")

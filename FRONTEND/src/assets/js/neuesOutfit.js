@@ -11,7 +11,7 @@ function nextKleidungsstück(id, list) {           //Funktion die ein zufällige
 
 document.getElementById("nextTshirt").addEventListener("click", () => {
     const bild = document.getElementById("tshirtBild");
-    fetch("http://localhost:8080/neuesoutfit/bild")
+    fetch("http://localhost:8080/neuesoutfit/testservice")         //FETCH Funktioniert!!!!!
     .then(response => response.text())
     .then(path => bild.src = path)
     .catch(error => alert(error));
