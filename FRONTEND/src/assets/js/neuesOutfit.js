@@ -9,9 +9,13 @@ function nextKleidungsstück(id, list) {           //Funktion die ein zufällige
 //     nextKleidungsstück("tshirtBild", tshirts_liste)                   //man konnte dieselbe id nicht zweimal vergeben, deswegen viele Duplikate
 // });
 
+document.getElementById("backendTest").addEventListener("click", () => {
+    fetch("http://localhost:8080/neuesOutfit/backendTest");
+});
+
 document.getElementById("nextTshirt").addEventListener("click", () => {
     const bild = document.getElementById("tshirtBild");
-    fetch("http://localhost:8080/neuesoutfit/testservice")         //FETCH Funktioniert!!!!!
+    fetch("http://localhost:8080/neuesOutfit/nextTshirt")         //FETCH Funktioniert!!!!!
     .then(response => response.text())
     .then(path => bild.src = path)
     .catch(error => alert(error));
