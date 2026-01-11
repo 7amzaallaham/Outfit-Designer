@@ -1,3 +1,23 @@
+const page = window.location.pathname; //welche Seite gerade angezeigt wird
+
+let endpoint = null; //Endpoint wird dann später gesetzt auf z.b tshirts, hosen...
+
+if (page.includes("tshirts")) endpoint = "tshirts";
+if (page.includes("hosen")) endpoint = "hosen";
+if (page.includes("schuhe")) endpoint = "schuhe";
+
+if (endpoint) {
+    fetch(`http://localhost:8080/garderobe/${endpoint}`)
+        .then(response => response.json())
+        .then(images => {
+            document.getElementById("item1").src = images[0];
+            document.getElementById("item2").src = images[1];
+            document.getElementById("item3").src = images[2];
+            document.getElementById("item4").src = images[3];
+        })
+        .catch(error => alert(error));
+}
+
 function togglePopup(popupId) {
     document.getElementById(popupId).classList.toggle("aktiv");
 }
