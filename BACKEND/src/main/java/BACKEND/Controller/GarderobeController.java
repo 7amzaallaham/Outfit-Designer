@@ -7,38 +7,31 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+import BACKEND.Service.GarderobeService;
+
 @RestController
 @RequestMapping("/garderobe")
 @CrossOrigin(origins = "*")
 public class GarderobeController {
 
+    private final GarderobeService service;
+
+    public GarderobeController(GarderobeService service) {
+        this.service = service;
+    }
+
     @GetMapping("/tshirts")
     public List<String> getTshirts() {
-        return List.of(
-                "assets/images/t-shirt1.jpg",
-                "assets/images/t-shirt1.jpg",
-                "assets/images/t-shirt2.jpg",
-                "assets/images/t-shirt4.jpg"
-        );
+        return service.getTshirts();
     }
 
     @GetMapping("/hosen")
     public List<String> getHosen() {
-        return List.of(
-                "assets/images/hose4.jpg",
-                "assets/images/hose2.jpg",
-                "assets/images/hose3.jpg",
-                "assets/images/hose4.jpg"
-        );
+        return service.getHosen();
     }
 
     @GetMapping("/schuhe")
     public List<String> getSchuhe() {
-        return List.of(
-                "assets/images/shuhe1.jpg",
-                "assets/images/shuhe2.jpg",
-                "assets/images/shuhe4.jpg",
-                "assets/images/shuhe4.jpg"
-        );
+        return service.getSchuhe();
     }
 }
