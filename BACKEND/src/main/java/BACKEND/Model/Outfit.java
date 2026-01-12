@@ -2,6 +2,7 @@ package BACKEND.Model;
 import jakarta.persistence.*;
 
 @Entity
+    
 
 public class Outfit {
 
@@ -22,7 +23,7 @@ public class Outfit {
 
     protected Outfit() {
 
-        //JPA
+        //JPA db
 
     }
 
