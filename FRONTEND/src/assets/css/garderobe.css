@@ -159,3 +159,13 @@
     display: flex;
     gap: 10px;
 }
+/*Nur für Garderobe-Outfits mit Backend dummy daten */
+#outfitContainer .kleidungsstück {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#outfitContainer .kleidungsstück img {
+    width: 100%;
+}
