@@ -1,55 +1,68 @@
-function nextKleidungsstück(id, list) {           //Funktion die ein zufälliges Stück aus einer Liste nimmt und anzeigt (jetzt parametrisiert wegen DRY)
+// function nextKleidungsstück(id, list) {           //Funktion die ein zufälliges Stück aus einer Liste nimmt und anzeigt (jetzt parametrisiert wegen DRY)
+//     const bild = document.getElementById(id);
+//     let index = Math.floor(Math.random() * 4);     //Zufallszahl zwischen 0 und 4
+//     bild.src = list[index].bild;                   //in Zukunft muss list.size() ermittelt werden
+// }
+
+// document.getElementById("nextTshirt").addEventListener("click", () => {
+//     const bild = document.getElementById("tshirtBild");
+//     fetch("http://localhost:8080/neuesOutfit/nextTshirt")         //FETCH Funktioniert!!!!!
+//     .then(response => response.text())
+//     .then(path => bild.src = path)
+//     .catch(error => alert(error));
+// });
+
+
+function backendNextKleidungsstueck(id, mapping) {      //funktion um zufälliges Bild aus dem Backend zu holen
     const bild = document.getElementById(id);
-    let index = Math.floor(Math.random() * 4);     //Zufallszahl zwischen 0 und 4
-    bild.src = list[index].bild;                   //in Zukunft muss list.size() ermittelt werden
+    fetch("http://localhost:8080/neuesOutfit/" + mapping)
+    .then(antwort => antwort.text())                        //JSON in String umwandeln
+    .then(pfad => bild.src = pfad)
+    .catch(error => alert(error));
 }
 
 
-// document.getElementById("nextTshirt").addEventListener("click", () => {                    //tshirts Pfeile
-//     nextKleidungsstück("tshirtBild", tshirts_liste)                   //man konnte dieselbe id nicht zweimal vergeben, deswegen viele Duplikate
-// });
-
-document.getElementById("backendTest").addEventListener("click", () => {
+document.getElementById("backendTest").addEventListener("click", () => {      //testfunktion
     fetch("http://localhost:8080/neuesOutfit/backendTest");
 });
 
-document.getElementById("nextTshirt").addEventListener("click", () => {
-    const bild = document.getElementById("tshirtBild");
-    fetch("http://localhost:8080/neuesOutfit/nextTshirt")         //FETCH Funktioniert!!!!!
-    .then(response => response.text())
-    .then(path => bild.src = path)
-    .catch(error => alert(error));
+//////////////////////////////////////////////////////// tshirt
+
+document.getElementById("nextTshirt").addEventListener("click", () => {                    //tshirt pfeile
+    backendNextKleidungsstueck("tshirtBild", "nextTshirt")
 });
 
 document.getElementById("previousTshirt").addEventListener("click", () => {
-    nextKleidungsstück("tshirtBild", tshirts_liste)
-});
+    backendNextKleidungsstueck("tshirtBild", "nextTshirt")
+})
 
-//--------------------------------
+
+///////////////////////////////////////////////////////// hose
 
 document.getElementById("nextHose").addEventListener("click", () => {                     //hosen Pfeile
-    nextKleidungsstück("hoseBild", hosen_liste)
+    backendNextKleidungsstueck("hoseBild", "nextHose")
 });
 
 document.getElementById("previousHose").addEventListener("click", () => {
-    nextKleidungsstück("hoseBild", hosen_liste)
+    backendNextKleidungsstueck("hoseBild", "nextHose")
 });
 
-//-------------------------------
+
+///////////////////////////////////////////////////////// schuhe
 
 document.getElementById("previousSchuhe").addEventListener("click", () => {              //schuhe Pfeile
-    nextKleidungsstück("schuheBild", schuhe_liste)
+    backendNextKleidungsstueck("schuheBild", "nextSchuhe")
 });
 
 document.getElementById("nextSchuhe").addEventListener("click", () => {
-    nextKleidungsstück("schuheBild", schuhe_liste)
+    backendNextKleidungsstueck("schuheBild", "nextSchuhe")
 });
 
 
 //---------------------------------------------------------------
 
-document.getElementById("speichernButton").addEventListener("click", () => {       //Zukünftig wäre es sinvoll den Outfit Konstrukor 
-    alert("Outfit gespeichert");                                                   //aufzurufen und das Objekt in unserer Dummy liste speichern
+document.getElementById("speichernButton").addEventListener("click", () => {       //!!!!!!!!!!!!!!!!!!!!!!!! muss geändert werden
+    alert("Outfit gespeichert");                                                   
     window.location.href = "garderobe-outfits.html";
 });
 
