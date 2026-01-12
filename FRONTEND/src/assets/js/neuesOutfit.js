@@ -62,6 +62,19 @@ document.getElementById("nextSchuhe").addEventListener("click", () => {
 //---------------------------------------------------------------
 
 document.getElementById("speichernButton").addEventListener("click", () => {       //!!!!!!!!!!!!!!!!!!!!!!!! muss geändert werden
+    const outfit = {                         //noch nicht fertigs
+        bild1: "bild",
+        bild2: "bild2"
+    }
+
+    fetch("http://localhost:8080/neuesOutfit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(outfit)
+    })
+
     alert("Outfit gespeichert");                                                   
     window.location.href = "garderobe-outfits.html";
 });

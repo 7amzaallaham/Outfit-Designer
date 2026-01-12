@@ -2,7 +2,6 @@ package BACKEND.Controller;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +12,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import BACKEND.Model.Hose;
+import BACKEND.Model.Outfit;
 import BACKEND.Model.Schuhe;
 import BACKEND.Model.Tshirt;
 import BACKEND.Service.NeuesOutfitService;
+
+    // Get = Anzeigen
+    // Post = Hinzufügen
+    // Put = Verändern
+    // Delete = Löschen
 
 @RestController
 @RequestMapping("/neuesOutfit")
@@ -29,10 +34,6 @@ public class NeuesOutfitController {
         this.service = service;
     }
 
-    // Get = Anzeigen
-    // Post = Hinzufügen
-    // Put = Verändern
-    // Delete = Löschen
 
     @GetMapping("/bild")
     public String bild() {
@@ -60,6 +61,12 @@ public class NeuesOutfitController {
         return link;
     }
 
+    @PostMapping
+    public Outfit outfitSpeichern(@RequestBody Outfit outfit) {
+        return outfit;
+    }
+
+    
     @GetMapping("/backendTest")
     public void backendTest() {    //fügt ein paar daten in unsere lokale Datenbank ein damit wir sie testen können
         Tshirt tshirt1 = new Tshirt(1, "data:image/jpeg;base64,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", "blau", "adidas");
@@ -75,11 +82,11 @@ public class NeuesOutfitController {
 
     //TESTS..........................
 
-    @PostMapping
-    public String add(@RequestBody String a) {
-        test += "Hallo" + a;
-        return test;
-    }
+    // @PostMapping
+    // public String add(@RequestBody String a) {
+    //     test += "Hallo" + a;
+    //     return test;
+    // }
 
     @DeleteMapping("/{id}")
     public void deleteTest(@PathVariable Long id) {

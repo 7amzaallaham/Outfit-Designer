@@ -5,7 +5,7 @@ import BACKEND.Model.Hose;
 import BACKEND.Model.Schuhe;
 import BACKEND.Model.Tshirt;
 
-public interface KleidungsstueckRepository {            //Schlecht wegen DRY???? :(
+public interface KleidungsstueckRepository {
 
     public Tshirt tshirtSpeichern(Tshirt tshirt);           //Tshirt
     public List<Tshirt> alleTshirtsListe();
