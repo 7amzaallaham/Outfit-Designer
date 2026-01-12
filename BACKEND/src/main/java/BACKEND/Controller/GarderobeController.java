@@ -1,11 +1,11 @@
 package BACKEND.Controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 import BACKEND.Service.GarderobeService;
 
@@ -33,5 +33,10 @@ public class GarderobeController {
     @GetMapping("/schuhe")
     public List<String> getSchuhe() {
         return service.getSchuhe();
+    }
+
+    @GetMapping("/outfits")
+    public List<List<String>> getOutfits() {
+        return service.getOutfits();
     }
 }
