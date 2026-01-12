@@ -1,12 +1,30 @@
 package BACKEND.Model;
+import jakarta.persistence.*;
+
+@Entity
 
 public class Outfit {
-    
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String outfitName;
+
+    @ManyToOne
     private Tshirt tshirt;
+
+    @ManyToOne
     private Hose hose;
+
+    @ManyToOne
     private Schuhe schuhe;
+
+    protected Outfit() {
+
+        //JPA
+
+    }
 
     public Outfit(int id, String name, Tshirt tshirt, Hose hose, Schuhe schuhe) {
         this.id = id;
@@ -21,21 +39,26 @@ public class Outfit {
         return id;
     }
 
+
     public String getOutfitName() {
         return outfitName;
     }
+
 
     public Tshirt getTshirt() {
         return tshirt;
     }
 
+
     public Hose getHose() {
         return hose;
     }
 
+
     public Schuhe getSchuhe() {
         return schuhe;
     }
+
 
     public String[] getFarben() {
         String[] farben = new String[3];
