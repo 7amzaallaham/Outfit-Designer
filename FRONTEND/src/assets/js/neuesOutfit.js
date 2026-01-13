@@ -4,14 +4,6 @@
 //     bild.src = list[index].bild;                   //in Zukunft muss list.size() ermittelt werden
 // }
 
-// document.getElementById("nextTshirt").addEventListener("click", () => {
-//     const bild = document.getElementById("tshirtBild");
-//     fetch("http://localhost:8080/neuesOutfit/nextTshirt")         //FETCH Funktioniert!!!!!
-//     .then(response => response.text())
-//     .then(path => bild.src = path)
-//     .catch(error => alert(error));
-// });
-
 
 function backendNextKleidungsstueck(id, mapping) {      //funktion um zufälliges Bild aus dem Backend zu holen
     const bild = document.getElementById(id);
@@ -24,6 +16,14 @@ function backendNextKleidungsstueck(id, mapping) {      //funktion um zufällige
 
 document.getElementById("backendTest").addEventListener("click", () => {      //testfunktion
     fetch("http://localhost:8080/neuesOutfit/backendTest");
+});
+
+document.getElementById("outfit").addEventListener("click", () => {
+    const bild = document.getElementById("outfit");
+    fetch("http://localhost:8080/neuesOutfit/outfit")
+    .then(antwort => antwort.text())
+    .then(pfad => bild.src = pfad)
+    .catch(error => alert(error));
 });
 
 //////////////////////////////////////////////////////// tshirt
@@ -61,10 +61,14 @@ document.getElementById("nextSchuhe").addEventListener("click", () => {
 
 //---------------------------------------------------------------
 
-document.getElementById("speichernButton").addEventListener("click", () => {       //!!!!!!!!!!!!!!!!!!!!!!!! muss geändert werden
-    const outfit = {                         //noch nicht fertigs
-        bild1: "bild",
-        bild2: "bild2"
+document.getElementById("speichernButton").addEventListener("click", () => {      //Sendet alle Bilder vom neu erstellten Outfit ans Backend
+    const tshirt = document.getElementById("tshirtBild").src;
+    const hose = document.getElementById("hoseBild").src;
+    const schuhe = document.getElementById("schuheBild").src;
+    const outfit = {                         
+        bild1: tshirt,
+        bild2: hose,
+        bilde: schuhe
     }
 
     fetch("http://localhost:8080/neuesOutfit", {
