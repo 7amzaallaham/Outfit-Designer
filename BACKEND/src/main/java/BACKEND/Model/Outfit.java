@@ -27,7 +27,7 @@ public class Outfit {
 
     }
 
-    public Outfit(String name, Tshirt tshirt, Hose hose, Schuhe schuhe) {
+    public Outfit(String name, Tshirt tshirt, Hose hose, Schuhe schuhe) {     //id wird automatisch generiert
         this.outfitName = name;
         this.tshirt = tshirt;
         this.hose = hose;
@@ -60,7 +60,7 @@ public class Outfit {
     }
 
 
-    public String[] getFarben() {
+    public String[] getFarben() {                 //Funktionen für die Filterfunktion (Gerade nicht in Verwendung)
         String[] farben = new String[3];
         farben[0] = tshirt.getFarbe();
         farben[1] = hose.getFarbe();

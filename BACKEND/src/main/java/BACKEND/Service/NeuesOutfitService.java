@@ -32,6 +32,7 @@ public class NeuesOutfitService {   //Service wird sich nicht mehr verändern, e
     }
 
 
+
     public Outfit outfitSpeichern(String tshirtBild, String hoseBild, String schuheBild) { 
         //im frontend wird auf speichern gedrückt
         //die drei bilder (und der Name) aus dem creator müssen dem Controller übergeben werden
@@ -47,20 +48,10 @@ public class NeuesOutfitService {   //Service wird sich nicht mehr verändern, e
         return outfit;
     }
 
-    public List<Kleidungsstueck> outfit() {                         //testfunktion
-        // List<Outfit> outfitListe = outfitRepository.alleOutfitsListe();               //lokal
-        List<Outfit> outfitListe = outfitRepository.findAll();                           //H2
-        Outfit outfit = outfitListe.get(0);
-        Tshirt tshirt = outfit.getTshirt();
-        Hose hose = outfit.getHose();
-        Schuhe schuhe = outfit.getSchuhe();
 
-        return List.of(tshirt, hose, schuhe);
-    }
 
     public Tshirt nextTshirt() {       //Zufälliges Tshirt aus dem Repository holen
-        // List<Tshirt> tshirts = kleidungsRepository.alleTshirtsListe();              //lokal
-        List<Tshirt> tshirts = kleidungsRepository.alleTshirtsListe();              //H2
+        List<Tshirt> tshirts = kleidungsRepository.alleTshirtsListe();
         int random = (int) (Math.random() * tshirts.size());
         Tshirt tshirt = tshirts.get(random);
         return tshirt;
@@ -80,6 +71,9 @@ public class NeuesOutfitService {   //Service wird sich nicht mehr verändern, e
         return schuh;
     }
 
+
+    ////////////////////////////////////////////////////////////////////////// TESTS
+
     public void testBackend(List<Tshirt> l, List<Hose> l2, List<Schuhe> l3) {    //testfunktion um Kleidungsstücke im Repository zu speichern
         for (int i = 0; i < l.size(); i++) {
             kleidungsRepository.save(l.get(i));
@@ -92,6 +86,17 @@ public class NeuesOutfitService {   //Service wird sich nicht mehr verändern, e
         for (int i = 0; i < l3.size(); i++) {
             kleidungsRepository.save(l3.get(i));
         }
+    }
+
+        public List<Kleidungsstueck> outfit() {                         //testfunktion
+        // List<Outfit> outfitListe = outfitRepository.alleOutfitsListe();               //lokal
+        List<Outfit> outfitListe = outfitRepository.findAll();                           //H2
+        Outfit outfit = outfitListe.get(0);
+        Tshirt tshirt = outfit.getTshirt();
+        Hose hose = outfit.getHose();
+        Schuhe schuhe = outfit.getSchuhe();
+
+        return List.of(tshirt, hose, schuhe);
     }
 
     
