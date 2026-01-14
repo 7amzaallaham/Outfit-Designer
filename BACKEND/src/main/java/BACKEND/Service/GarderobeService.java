@@ -8,26 +8,26 @@ import BACKEND.Model.Hose;
 import BACKEND.Model.Outfit;
 import BACKEND.Model.Schuhe;
 import BACKEND.Model.Tshirt;
-import BACKEND.Repository.KleidungsstueckRepository;
-import BACKEND.Repository.OutfitRepository;
+import BACKEND.Repository.KleidungsstueckRepository_JPA;
+import BACKEND.Repository.OutfitRepository_JPA;
 
 @Service
 public class GarderobeService {
     // Zugriff auf gespeicherte Outfits und auf Tshirts / Hosen / Schuhe
-    private final OutfitRepository outfitRepository;
-    private final KleidungsstueckRepository kleidungsstueckRepository;
+    private final OutfitRepository_JPA outfitRepository;
+    private final KleidungsstueckRepository_JPA kleidungsstueckRepository;
 
     // // Spring gibt hier automatisch die richtigen Repositories rein
     public GarderobeService(
-            OutfitRepository outfitRepository,
-            KleidungsstueckRepository kleidungsstueckRepository) {
+            OutfitRepository_JPA outfitRepository,
+            KleidungsstueckRepository_JPA kleidungsstueckRepository) {
         this.outfitRepository = outfitRepository;
         this.kleidungsstueckRepository = kleidungsstueckRepository;
     }
 
     // Holt alle Outfits aus dem Repository (die im Creator erstellt wurden)
     public List<Outfit> getOutfits() {
-        return outfitRepository.alleOutfitsListe();
+        return outfitRepository.findAll();
     }
     // Holt alle Tshirts aus der Datenbank
     public List<Tshirt> getTshirts() {
