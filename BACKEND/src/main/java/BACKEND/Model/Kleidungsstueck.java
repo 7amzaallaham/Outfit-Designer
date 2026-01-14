@@ -5,12 +5,11 @@ import jakarta.persistence.*;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 
-public abstract class Kleidungsstueck {    //aus dem Klassendiagramm
+public abstract class Kleidungsstueck {    //aus dem Klassendiagramm  ---> Tshirt, Hose, Schuhe erweitern die Klasse
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private int id;                   //alle public weil sie vom Outfit verwendet werden
+    private int id;
     private String bildpfad;
     private String farbe;
     private String marke;

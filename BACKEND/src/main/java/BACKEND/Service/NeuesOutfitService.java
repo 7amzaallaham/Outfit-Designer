@@ -7,9 +7,9 @@ import BACKEND.Model.Kleidungsstueck;
 import BACKEND.Model.Outfit;
 import BACKEND.Model.Schuhe;
 import BACKEND.Model.Tshirt;
-import BACKEND.Repository.KleidungsstueckRepository;
+// import BACKEND.Repository.KleidungsstueckRepository;
+// import BACKEND.Repository.OutfitRepository;
 import BACKEND.Repository.KleidungsstueckRepository_JPA;
-import BACKEND.Repository.OutfitRepository;
 import BACKEND.Repository.OutfitRepository_JPA;
 
 @Service

@@ -2,8 +2,6 @@ package BACKEND.Model;
 import jakarta.persistence.*;
 
 @Entity
-    
-
 public class Outfit {
 
     @Id
