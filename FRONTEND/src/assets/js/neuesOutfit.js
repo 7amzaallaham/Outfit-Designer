@@ -68,7 +68,7 @@ document.getElementById("speichernButton").addEventListener("click", () => {    
     const outfit = {                         
         bild1: tshirt,
         bild2: hose,
-        bilde: schuhe
+        bild3: schuhe
     }
 
     fetch("http://localhost:8080/neuesOutfit", {
