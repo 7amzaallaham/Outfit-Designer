@@ -9,7 +9,7 @@ import BACKEND.Model.Schuhe;
 import BACKEND.Model.Tshirt;
 
 @Repository
-@Primary
+
 public class KleidungsstueckRepository_LOKAL implements KleidungsstueckRepository {
 
     private List<Tshirt> tshirts = new ArrayList<>();
