@@ -27,8 +27,7 @@ public class Outfit {
 
     }
 
-    public Outfit(int id, String name, Tshirt tshirt, Hose hose, Schuhe schuhe) {
-        this.id = id;
+    public Outfit(String name, Tshirt tshirt, Hose hose, Schuhe schuhe) {
         this.outfitName = name;
         this.tshirt = tshirt;
         this.hose = hose;

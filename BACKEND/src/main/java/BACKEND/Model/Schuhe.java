@@ -9,7 +9,7 @@ public class Schuhe extends Kleidungsstueck {
         // JPA braucht einen No-Args Constructor
     }
 
-    public Schuhe(int id, String bildLink, String farbe, String marke) {
-        super(id, bildLink, farbe, marke);
+    public Schuhe(String bildLink, String farbe, String marke) {
+        super(bildLink, farbe, marke);
     }
 }

@@ -18,8 +18,7 @@ public abstract class Kleidungsstueck {    //aus dem Klassendiagramm
     protected Kleidungsstueck() {
     }
 
-    public Kleidungsstueck(int id, String bildLink, String farbe, String marke) {
-        this.id = id;
+    public Kleidungsstueck(String bildLink, String farbe, String marke) {
         this.bildpfad = bildLink;
         this.farbe = farbe;
         this.marke = marke;

@@ -12,7 +12,7 @@ public class Tshirt extends Kleidungsstueck {
 
     }
 
-    public Tshirt(int id, String bildLink, String farbe, String marke) {
-        super(id, bildLink, farbe, marke);
+    public Tshirt(String bildLink, String farbe, String marke) {
+        super(bildLink, farbe, marke);
     }
 }

@@ -9,7 +9,7 @@ public class Hose extends Kleidungsstueck {
         // JPA 
     }
 
-    public Hose(int id, String bildLink, String farbe, String marke) {
-        super(id, bildLink, farbe, marke);
+    public Hose(String bildLink, String farbe, String marke) {
+        super(bildLink, farbe, marke);
     }
 }
