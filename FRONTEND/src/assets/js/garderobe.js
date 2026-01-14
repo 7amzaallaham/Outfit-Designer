@@ -1,4 +1,4 @@
-//Dummy Bilder für Tshirts, Hosen und Schuhe je nach Seite aus Backend
+//Kleidungsstueck für Tshirts, Hosen und Schuhe je nach Seite aus Backend
 const page = window.location.pathname;
 
 let endpoint = null; //Endpoint wird dann später gesetzt auf z.b tshirts, hosen...
@@ -10,26 +10,39 @@ if (page.includes("schuhe")) endpoint = "schuhe";
 if (endpoint) {
     fetch(`http://localhost:8080/garderobe/${endpoint}`)
         .then(response => response.json())
-        .then(images => {
-            document.getElementById("item1").src = images[0];
-            document.getElementById("item2").src = images[1];
-            document.getElementById("item3").src = images[2];
-            document.getElementById("item4").src = images[3];
+        .then(items => {
+            const container = document.getElementById("itemContainer");
+            container.innerHTML = "";
+
+            items.forEach(item => {
+                const div = document.createElement("div"); //neues div für einzelnen Kleidungsstück erstellen
+                div.classList.add("kleidungsstück"); //dem div die CSS Klasse für Styling hinzufügen
+                div.innerHTML = `<img src="${item.bildpfad}"> <button class="löschen_veröffentlichen">...</button>`; //Kleidungsstück und löschen/veröffentlichen buttin in das div einfügen
+
+                container.appendChild(div);
+            });
         })
         .catch(error => alert(error));
 }
-//Dummy Outfits (je 3 Bilder) aus Backend
+//Outfits aus Backend holen
 if (page.includes("outfits")) {
     fetch("http://localhost:8080/garderobe/outfits")
         .then(response => response.json())
         .then(outfits => {
-            document.getElementById("o1_1").src = outfits[0][0];
-            document.getElementById("o1_2").src = outfits[0][1];
-            document.getElementById("o1_3").src = outfits[0][2];
+            const container = document.getElementById("outfitContainer");
+            container.innerHTML = "";
 
-            document.getElementById("o2_1").src = outfits[1][0];
-            document.getElementById("o2_2").src = outfits[1][1];
-            document.getElementById("o2_3").src = outfits[1][2];
+            outfits.forEach(outfit => {
+                const div = document.createElement("div");
+                div.classList.add("kleidungsstück");
+                div.innerHTML = `
+                <img src="${outfit.tshirt.bildpfad}">
+                <img src="${outfit.hose.bildpfad}">
+                <img src="${outfit.schuhe.bildpfad}">
+                <button class="löschen_veröffentlichen">...</button>`;
+
+                container.appendChild(div);
+            });
         })
         .catch(error => alert(error));
 }
@@ -54,9 +67,15 @@ document.getElementById("farbeAuwahlenButton").addEventListener("click", () => t
 document.getElementById("farbeAnwenden").addEventListener("click", () => removePopup("farbePopup"));
 
 
-//Löschen / Veröffentlichen
+/*Löschen / Veröffentlichen
 document.querySelectorAll(".löschen_veröffentlichen").forEach(button => {
     button.addEventListener("click", () => togglePopup("aktionPopup"));
+});
+*/
+document.addEventListener("click", event => {
+  if (event.target.classList.contains("löschen_veröffentlichen")) {
+    togglePopup("aktionPopup");
+  }
 });
 
 document.getElementById("loschenButton").addEventListener("click", () => {
