@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import BACKEND.Model.Outfit;
 
 @Repository
-@Primary
+
 public class OutfitRepository_LOKAL implements OutfitRepository {
 
     private List<Outfit> outfits = new ArrayList<>();
