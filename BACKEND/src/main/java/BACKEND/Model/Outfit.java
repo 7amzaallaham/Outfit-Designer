@@ -12,13 +12,13 @@ public class Outfit {
 
     private String outfitName;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Tshirt tshirt;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Hose hose;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Schuhe schuhe;
 
     protected Outfit() {

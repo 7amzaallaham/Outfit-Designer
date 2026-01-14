@@ -15,21 +15,21 @@ import BACKEND.Repository.OutfitRepository_JPA;
 @Service
 public class NeuesOutfitService {   //Service wird sich nicht mehr verändern, egal welches Repsitory benutzt wird
     
-    private OutfitRepository outfitRepository;
-    private KleidungsstueckRepository kleidungsRepository;
-    // private OutfitRepository_JPA outfitRepository;
-    // private KleidungsstueckRepository_JPA kleidungsRepository;
+    // private OutfitRepository outfitRepository;
+    // private KleidungsstueckRepository kleidungsRepository;
+    private OutfitRepository_JPA outfitRepository;
+    private KleidungsstueckRepository_JPA kleidungsRepository;
     // private Kleidungsstueck aktuellesTshirt;    //kann später benutzt werden um unfertige Outfits im Creator zwischenzuspeichern
 
-    public NeuesOutfitService(OutfitRepository outfitRepository, KleidungsstueckRepository kleidungsRepository) {    //LOKALE Datenbank
-        this.outfitRepository = outfitRepository;                       //Constructor Injection
-        this.kleidungsRepository = kleidungsRepository;
-    }
-
-    // public NeuesOutfitService(OutfitRepository_JPA outfitrepo, KleidungsstueckRepository_JPA kleidungsrepo) {      //H2 Datenbank
-    //     this.outfitRepository = outfitrepo;                              //Construktor Injection
-    //     this.kleidungsRepository = kleidungsrepo;
+    // public NeuesOutfitService(OutfitRepository outfitRepository, KleidungsstueckRepository kleidungsRepository) {    //LOKALE Datenbank
+    //     this.outfitRepository = outfitRepository;                       //Constructor Injection
+    //     this.kleidungsRepository = kleidungsRepository;
     // }
+
+    public NeuesOutfitService(OutfitRepository_JPA outfitrepo, KleidungsstueckRepository_JPA kleidungsrepo) {      //H2 Datenbank
+        this.outfitRepository = outfitrepo;                              //Construktor Injection
+        this.kleidungsRepository = kleidungsrepo;
+    }
 
 
     public Outfit outfitSpeichern(String tshirtBild, String hoseBild, String schuheBild) { 
@@ -42,14 +42,14 @@ public class NeuesOutfitService {   //Service wird sich nicht mehr verändern, e
         Schuhe schuhe = new Schuhe(schuheBild, "weiß", "marke");
 
         Outfit outfit = new Outfit("Outfitname", tshirt, hose, schuhe);
-        outfitRepository.outfitSpeichern(outfit);                                        //lokal
-        // outfitRepository.save(outfit);                                                      //H2
+        // outfitRepository.outfitSpeichern(outfit);                                        //lokal
+        outfitRepository.save(outfit);                                                      //H2
         return outfit;
     }
 
     public List<Kleidungsstueck> outfit() {                         //testfunktion
-        List<Outfit> outfitListe = outfitRepository.alleOutfitsListe();               //lokal
-        // List<Outfit> outfitListe = outfitRepository.findAll();                           //H2
+        // List<Outfit> outfitListe = outfitRepository.alleOutfitsListe();               //lokal
+        List<Outfit> outfitListe = outfitRepository.findAll();                           //H2
         Outfit outfit = outfitListe.get(0);
         Tshirt tshirt = outfit.getTshirt();
         Hose hose = outfit.getHose();
@@ -59,9 +59,8 @@ public class NeuesOutfitService {   //Service wird sich nicht mehr verändern, e
     }
 
     public Tshirt nextTshirt() {       //Zufälliges Tshirt aus dem Repository holen
-        List<Tshirt> tshirts = kleidungsRepository.alleTshirtsListe();              //lokal
-        // List<Tshirt> tshirts = kleidungsRepository.                   //H2
-        System.out.println(tshirts.size());
+        // List<Tshirt> tshirts = kleidungsRepository.alleTshirtsListe();              //lokal
+        List<Tshirt> tshirts = kleidungsRepository.alleTshirtsListe();              //H2
         int random = (int) (Math.random() * tshirts.size());
         Tshirt tshirt = tshirts.get(random);
         return tshirt;
@@ -83,15 +82,15 @@ public class NeuesOutfitService {   //Service wird sich nicht mehr verändern, e
 
     public void testBackend(List<Tshirt> l, List<Hose> l2, List<Schuhe> l3) {    //testfunktion um Kleidungsstücke im Repository zu speichern
         for (int i = 0; i < l.size(); i++) {
-            kleidungsRepository.tshirtSpeichern(l.get(i));
+            kleidungsRepository.save(l.get(i));
         }
 
         for (int i = 0; i < l2.size(); i++) {
-            kleidungsRepository.hoseSpeichern(l2.get(i));
+            kleidungsRepository.save(l2.get(i));
         }
 
         for (int i = 0; i < l3.size(); i++) {
-            kleidungsRepository.schuheSpeichern(l3.get(i));
+            kleidungsRepository.save(l3.get(i));
         }
     }
 
