@@ -39,9 +39,4 @@ public abstract class Kleidungsstueck {    //aus dem Klassendiagramm  ---> Tshir
     public String getMarke() {
         return marke;
     }
-
-    // public void zumCreatorHinzufuegen() {
-    //     //erstmal auslassen
-    // }
-
 }

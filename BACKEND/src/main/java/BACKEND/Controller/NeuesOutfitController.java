@@ -3,41 +3,33 @@ package BACKEND.Controller;
 import java.util.List;
 import java.util.Map;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import BACKEND.Model.Hose;
-import BACKEND.Model.Kleidungsstueck;
 import BACKEND.Model.Outfit;
 import BACKEND.Model.Schuhe;
 import BACKEND.Model.Tshirt;
 import BACKEND.Service.NeuesOutfitService;
 
-    // Get = Anzeigen
-    // Post = Hinzufügen
-    // Put = Verändern
-    // Delete = Löschen
 
 @RestController
 @RequestMapping("/neuesOutfit")
-@CrossOrigin(origins = "*")             //damit Fronted fetch machen kann
+@CrossOrigin(origins = "*")
 public class NeuesOutfitController {
 
     private final NeuesOutfitService service;
 
-    public NeuesOutfitController(NeuesOutfitService service) {         //Constructor Injection
+    public NeuesOutfitController(NeuesOutfitService service) {
         this.service = service;
     }
 
 
     @GetMapping("/nextTshirt")
     public String nextTshirt() {
-        Tshirt shirt = service.nextTshirt();          //funktion aus dem Service
+        Tshirt shirt = service.nextTshirt();
         String link = shirt.getBildpfad();
         return link;
     }
@@ -92,24 +84,6 @@ public class NeuesOutfitController {
         List<Schuhe> l3 = List.of(schuhe1, schuhe2, schuhe3, schuhe4, schuhe5);
 
         service.testBackend(l, l2, l3);
-    }
-
-    @GetMapping("/outfit")            //testfunktion
-    public String outfit() {
-        List<Kleidungsstueck> outfitTeile = service.outfit();
-        String t = outfitTeile.get(0).getBildpfad();
-        return t;
-    }
-
-
-    @DeleteMapping("/{id}")
-    public void deleteTest(@PathVariable Long id) {
-        //löschen
-    }
-
-    @PutMapping("/{id}")
-    public void aendernTest(@PathVariable Long id, @RequestBody String b) {
-
     }
 
 }

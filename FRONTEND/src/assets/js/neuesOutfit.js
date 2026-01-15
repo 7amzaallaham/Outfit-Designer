@@ -1,10 +1,3 @@
-// function nextKleidungsstück(id, list) {           //Funktion die ein zufälliges Stück aus einer Liste nimmt und anzeigt (jetzt parametrisiert wegen DRY)
-//     const bild = document.getElementById(id);
-//     let index = Math.floor(Math.random() * 4);     //Zufallszahl zwischen 0 und 4
-//     bild.src = list[index].bild;                   //in Zukunft muss list.size() ermittelt werden
-// }
-
-
 function backendNextKleidungsstueck(id, mapping) {      //funktion um zufälliges Bild aus dem Backend zu holen
     const bild = document.getElementById(id);
     fetch("http://localhost:8080/neuesOutfit/" + mapping)
@@ -14,16 +7,8 @@ function backendNextKleidungsstueck(id, mapping) {      //funktion um zufällige
 }
 
 
-document.getElementById("backendTest").addEventListener("click", () => {      //testfunktion
+document.getElementById("backendTest").addEventListener("click", () => {      //testfunktion erstellt Objekte im Backend
     fetch("http://localhost:8080/neuesOutfit/backendTest");
-});
-
-document.getElementById("outfit").addEventListener("click", () => {
-    const bild = document.getElementById("outfit");
-    fetch("http://localhost:8080/neuesOutfit/outfit")
-    .then(antwort => antwort.text())
-    .then(pfad => bild.src = pfad)
-    .catch(error => alert(error));
 });
 
 //////////////////////////////////////////////////////// tshirt
@@ -98,4 +83,8 @@ document.getElementById("boxSchuhe").addEventListener("click", () => {
 });
 
 
-
+// function nextKleidungsstück(id, list) {           //Funktion die ein zufälliges Stück aus einer Liste nimmt und anzeigt (jetzt parametrisiert wegen DRY)
+//     const bild = document.getElementById(id);
+//     let index = Math.floor(Math.random() * 4);     //Zufallszahl zwischen 0 und 4
+//     bild.src = list[index].bild;             
+// }
