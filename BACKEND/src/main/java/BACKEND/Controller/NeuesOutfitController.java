@@ -27,32 +27,32 @@ public class NeuesOutfitController {
     }
 
 
-    @GetMapping("/nextTshirt")
+    @GetMapping("/randomTshirt")
     public String nextTshirt() {
-        Tshirt shirt = service.nextTshirt();
+        Tshirt shirt = service.randomTshirt();
         String link = shirt.getBildpfad();
         return link;
     }
 
-    @GetMapping("/nextHose")
+    @GetMapping("/randomHose")
     public String nextHose() {
-        Hose hose = service.nextHose();
+        Hose hose = service.randomHose();
         String link = hose.getBildpfad();
         return link;
     }
 
-    @GetMapping("/nextSchuhe")
+    @GetMapping("/randomSchuhe")
     public String nextSchuhe() {
-        Schuhe schuhe = service.nextSchuhe();
+        Schuhe schuhe = service.randomSchuhe();
         String link = schuhe.getBildpfad();
         return link;
     }
 
     @PostMapping
     public Outfit outfitSpeichern(@RequestBody Map<String, String> outfit) {    //wandelt die json vom Frontend in eine Map um
-        String tshirtBild = outfit.get("bild1");
-        String hoseBild = outfit.get("bild2");
-        String schuheBild = outfit.get("bild3");
+        String tshirtBild = outfit.get("TshirtBild");
+        String hoseBild = outfit.get("HoseBild");
+        String schuheBild = outfit.get("SchuheBild");
         return service.outfitSpeichern(tshirtBild, hoseBild, schuheBild);
     }
 

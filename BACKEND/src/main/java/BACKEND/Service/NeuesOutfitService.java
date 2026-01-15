@@ -34,21 +34,21 @@ public class NeuesOutfitService {
 
 
 
-    public Tshirt nextTshirt() {       //Zufälliges Tshirt aus dem Repository holen
+    public Tshirt randomTshirt() {       //Zufälliges Tshirt aus dem Repository holen
         List<Tshirt> tshirts = kleidungsRepository.alleTshirtsListe();
         int random = (int) (Math.random() * tshirts.size());
         Tshirt tshirt = tshirts.get(random);
         return tshirt;
     }
 
-    public Hose nextHose() {
+    public Hose randomHose() {
         List<Hose> hosen = kleidungsRepository.alleHosenListe();
         int random = (int) (Math.random() * hosen.size());
         Hose hose = hosen.get(random);
         return hose;
     }
 
-    public Schuhe nextSchuhe() {
+    public Schuhe randomSchuhe() {
         List<Schuhe> schuhe = kleidungsRepository.alleSchuheListe();
         int random = (int) (Math.random() * schuhe.size());
         Schuhe schuh = schuhe.get(random);

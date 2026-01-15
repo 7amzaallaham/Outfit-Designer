@@ -14,33 +14,33 @@ document.getElementById("backendTest").addEventListener("click", () => {      //
 //////////////////////////////////////////////////////// tshirt
 
 document.getElementById("nextTshirt").addEventListener("click", () => {                    //tshirt pfeile
-    backendNextKleidungsstueck("tshirtBild", "nextTshirt")
+    backendNextKleidungsstueck("tshirtBild", "randomTshirt")
 });
 
 document.getElementById("previousTshirt").addEventListener("click", () => {
-    backendNextKleidungsstueck("tshirtBild", "nextTshirt")
+    backendNextKleidungsstueck("tshirtBild", "randomTshirt")
 })
 
 
 ///////////////////////////////////////////////////////// hose
 
 document.getElementById("nextHose").addEventListener("click", () => {                     //hosen Pfeile
-    backendNextKleidungsstueck("hoseBild", "nextHose")
+    backendNextKleidungsstueck("hoseBild", "randomHose")
 });
 
 document.getElementById("previousHose").addEventListener("click", () => {
-    backendNextKleidungsstueck("hoseBild", "nextHose")
+    backendNextKleidungsstueck("hoseBild", "randomHose")
 });
 
 
 ///////////////////////////////////////////////////////// schuhe
 
 document.getElementById("previousSchuhe").addEventListener("click", () => {              //schuhe Pfeile
-    backendNextKleidungsstueck("schuheBild", "nextSchuhe")
+    backendNextKleidungsstueck("schuheBild", "randomSchuhe")
 });
 
 document.getElementById("nextSchuhe").addEventListener("click", () => {
-    backendNextKleidungsstueck("schuheBild", "nextSchuhe")
+    backendNextKleidungsstueck("schuheBild", "randomSchuhe")
 });
 
 
@@ -51,9 +51,9 @@ document.getElementById("speichernButton").addEventListener("click", () => {    
     const hose = document.getElementById("hoseBild").src;
     const schuhe = document.getElementById("schuheBild").src;
     const outfit = {                         
-        bild1: tshirt,
-        bild2: hose,
-        bild3: schuhe
+        TshirtBild: tshirt,
+        HoseBild: hose,
+        SchuheBild: schuhe
     }
 
     fetch("http://localhost:8080/neuesOutfit", {
