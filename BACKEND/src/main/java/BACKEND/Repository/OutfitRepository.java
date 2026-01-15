@@ -7,6 +7,6 @@ import BACKEND.Model.Outfit;
 
 @Repository
 @Primary
-public interface OutfitRepository_JPA
+public interface OutfitRepository
         extends JpaRepository<Outfit, Integer> {
 }

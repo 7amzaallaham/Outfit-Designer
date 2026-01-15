@@ -6,16 +6,16 @@ import BACKEND.Model.Hose;
 import BACKEND.Model.Outfit;
 import BACKEND.Model.Schuhe;
 import BACKEND.Model.Tshirt;
-import BACKEND.Repository.KleidungsstueckRepository_JPA;
-import BACKEND.Repository.OutfitRepository_JPA;
+import BACKEND.Repository.KleidungsstueckRepository;
+import BACKEND.Repository.OutfitRepository;
 
 @Service
 public class NeuesOutfitService {
     
-    private OutfitRepository_JPA outfitRepository;
-    private KleidungsstueckRepository_JPA kleidungsRepository;
+    private OutfitRepository outfitRepository;
+    private KleidungsstueckRepository kleidungsRepository;
 
-    public NeuesOutfitService(OutfitRepository_JPA outfitrepo, KleidungsstueckRepository_JPA kleidungsrepo) {      //H2 Datenbank
+    public NeuesOutfitService(OutfitRepository outfitrepo, KleidungsstueckRepository kleidungsrepo) {      //H2 Datenbank
         this.outfitRepository = outfitrepo;
         this.kleidungsRepository = kleidungsrepo;
     }

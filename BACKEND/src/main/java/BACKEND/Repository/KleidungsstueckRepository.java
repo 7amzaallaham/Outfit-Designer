@@ -12,7 +12,7 @@ import BACKEND.Model.Tshirt;
 
 @Repository
 @Primary
-public interface KleidungsstueckRepository_JPA
+public interface KleidungsstueckRepository
         extends JpaRepository<Kleidungsstueck, Integer> {
 
     @Query("select t from Tshirt t")       //Gerade werden alle Kleidungsstücke in nur einer Tabelle gespeichert
