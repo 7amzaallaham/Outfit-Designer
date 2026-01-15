@@ -24,9 +24,8 @@ public class GarderobeController {
     public GarderobeController(GarderobeService service) {
         this.service = service;
     }
-    
-    // GET /garderobe/outfits
-    // Frontend bekommt ALLE Outfits
+
+
     @GetMapping("/outfits")
     public List<Outfit> getOutfits() {
         return service.getOutfits();

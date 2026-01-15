@@ -15,9 +15,9 @@ if (endpoint) {
             container.innerHTML = "";
 
             items.forEach(item => {
-                const div = document.createElement("div"); //neues div für einzelnen Kleidungsstück erstellen
-                div.classList.add("kleidungsstück"); //dem div die CSS Klasse für Styling hinzufügen
-                div.innerHTML = `<img src="${item.bildpfad}"> <button class="löschen_veröffentlichen">...</button>`; //Kleidungsstück und löschen/veröffentlichen buttin in das div einfügen
+                const div = document.createElement("div"); //neues <div> für einzelnen Kleidungsstück erstellen
+                div.classList.add("kleidungsstück"); //CSS Klasse für Styling
+                div.innerHTML = `<img src="${item.bildpfad}"> <button class="löschen_veröffentlichen">...</button>`; //Kleidungsstück und löschen/veröffentlichen button in in <div> einfügen
 
                 container.appendChild(div);
             });
