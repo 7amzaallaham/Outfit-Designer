@@ -28,21 +28,21 @@ public class NeuesOutfitController {
 
 
     @GetMapping("/randomTshirt")
-    public String nextTshirt() {
+    public String randomTshirt() {
         Tshirt shirt = service.randomTshirt();
         String link = shirt.getBildpfad();
         return link;
     }
 
     @GetMapping("/randomHose")
-    public String nextHose() {
+    public String randomHose() {
         Hose hose = service.randomHose();
         String link = hose.getBildpfad();
         return link;
     }
 
     @GetMapping("/randomSchuhe")
-    public String nextSchuhe() {
+    public String randomSchuhe() {
         Schuhe schuhe = service.randomSchuhe();
         String link = schuhe.getBildpfad();
         return link;
